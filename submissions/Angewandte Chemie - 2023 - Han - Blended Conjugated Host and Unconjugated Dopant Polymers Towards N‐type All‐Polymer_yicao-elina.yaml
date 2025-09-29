@@ -1,0 +1,78 @@
+username: "yicao-elina"
+paper_title: "Blended Conjugated Host and Unconjugated Dopant Polymers Towards N-type All-Polymer Conductors and High-ZT Thermoelectrics"
+paper_pdf: "https://onlinelibrary.wiley.com/doi/epdf/10.1002/anie.202219313"
+identifier: "https://doi.org/10.1002/anie.202219313"
+code_url: "NOT_SPECIFIED"
+data_url: "NOT_SPECIFIED"
+
+claims:
+  - claim: "Highest electrical conductivity of 78 Scm⁻¹"
+    instruction:
+      - "1. Synthesize PDPIN polymer (details in Supporting Information Section 2)"
+      - "Synthesize PSpF polymer dopant (details in previous publication referenced [28])"
+      - "Prepare a film of PDPIN doped with 75 wt% PSpF"
+      - "Measure the electrical conductivity of the film"
+      - "Expected result: 78 Scm⁻¹"
+
+  - claim: "Power factor (PF) of 163 μWm⁻¹K⁻²"
+    instruction:
+      - "1. Follow steps 1-3 from the previous claim"
+      - "Measure the Seebeck coefficient (S) of the film"
+      - "Calculate the power factor using the formula PF = σS², where σ is the electrical conductivity"
+      - "Expected result: 163 μWm⁻¹K⁻²"
+
+  - claim: "ZT of 0.53 at room temperature"
+    instruction:
+      - "1. Follow steps 1-3 from the "electrical conductivity" claim"
+      - "Measure the Seebeck coefficient (S) of the film"
+      - "Measure the thermal conductivity (κ) of the film"
+      - "Calculate ZT using the formula ZT = σS²T/κ, where T is the absolute temperature (room temperature)"
+      - "Expected result: 0.53"
+
+  - claim: "Lowest thermal conductivity of 0.099 Wm⁻¹K⁻¹"
+    instruction:
+      - "1. Follow steps 1-3 from the "electrical conductivity" claim"
+      - "Measure the thermal conductivity of the film"
+      - "Expected result: 0.099 Wm⁻¹K⁻¹"
+
+  - claim: "LUMO energy levels of -4.26 eV"
+    instruction:
+      - "1. Synthesize PDPIN"
+      - "Perform electrochemical measurements (likely cyclic voltammetry as mentioned in the text relating to HOMO level determination) to determine the LUMO energy levels"
+      - "Expected Result: -4.26 eV"
+
+  - claim: "HOMO energy levels of -5.55 eV"
+    instruction:
+      - "1. Synthesize PDPIN"
+      - "Use cyclic voltammetry to measure the onset oxidation"
+      - "Calculate the HOMO energy levels from the onset oxidation"
+      - "Expected Result: -5.55 eV"
+
+  - claim: "Electrochemical band gap is 1.29 eV"
+    instruction:
+      - "1. Follow steps from previous two claims about calculating HOMO and LUMO levels"
+      - "Calculate band gap from the difference between the HOMO and LUMO energy levels"
+      - "Expected result: 1.29 eV"
+
+  - claim: "Optical band gap of 1.23 eV"
+    instruction:
+      - "1. Prepare a film of PDPIN"
+      - "Measure UV/Vis absorption spectrum"
+      - "Estimate the optical band gap from the absorption onset"
+      - "Expected result: 1.23 eV"
+
+  - claim: "Weight-average molecular weight of PDPIN, 122 kDa"
+    instruction:
+      - "1. Synthesize PDPIN"
+      - "Perform Gel Permeation Chromatography (GPC) at 150°C"
+      - "Expected result: 122 kDa"
+
+non_reproducible_claims:
+  - claim: "PSpF doped PDPIN presents much higher air stability of σ than that of N-DMBI-doped PDPIN"
+    reason: "reason: practical_limits
+explanation: Requires long-term measurement (75 days) under ambient conditions."
+
+  - claim: "The involvement of F⁻ in the doping of PDPIN:PSpF was supported by energy-dispersive X-ray spectroscopy (EDS) observation and ab initio computational calculations."
+    reason: "reason: non_computational
+explanation: The claim involves EDS observation which is an experimental procedure. While the ab initio calculations are computational, the paper does not provide details allowing the claim to be computationally reproduced."
+

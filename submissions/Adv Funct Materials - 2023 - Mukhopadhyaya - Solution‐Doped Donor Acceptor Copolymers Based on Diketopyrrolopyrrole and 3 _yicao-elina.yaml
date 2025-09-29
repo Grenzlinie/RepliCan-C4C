@@ -1,0 +1,56 @@
+username: "yicao-elina"
+paper_title: "Solution-Doped Donor–Acceptor Copolymers Based on Diketopyrrolopyrrole and 3, 3′-Bis (2-(2-(2-Methoxyethoxy) Ethoxy) ethoxy)-2, 2′-Bithiophene Exhibiting Outstanding Thermoelectric Power Factors with p-Dopants"
+paper_pdf: "https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/adfm.202309646"
+identifier: "https://doi.org/10.1002/adfm.202309646"
+code_url: "NOT_SPECIFIED"
+data_url: "NOT_SPECIFIED"
+
+claims:
+  - claim: "The highest conductivity (𝝈) ≈700 S cm−1 in this series with the acidic dopant (CF3SO3H)."
+    instruction:
+      - "1. Synthesize P4 polymer (p-DPP(EDOT)2-(MEET)2)"
+      - "Dope P4 with CF3SO3H at 50 mol.%"
+      - "Measure the electrical conductivity using a four-point probe method"
+      - "Expected result: Conductivity ≈ 700 S cm−1"
+
+  - claim: "Other polymers exhibit high 𝝈≈300–500 S cm−1 and power factor up to 300 μW m−1 K−2."
+    instruction:
+      - "1. Synthesize and dope P1, P2, and P3 with F4TCNQ, CF3SO3H, and Cp(CN)3-(COOMe)3 at 50 mol.%"
+      - "Measure electrical conductivity and Seebeck coefficient"
+      - "Calculate power factor using PF = S^2 * 𝜎"
+      - "Expected results: Conductivity in the range of 300-500 S cm-1 and PF up to 300 μW m−1 K−2 for different polymer/dopant combinations"
+
+  - claim: "The highest melting point was found for P4 among all polymers in the series."
+    instruction:
+      - "1. Synthesize P1, P2, P3, and P4"
+      - "Perform Differential Scanning Calorimetry (DSC) measurements on each polymer"
+      - "Determine the melting point for each polymer from the DSC thermograms"
+      - "Expected result: P4 exhibits the highest melting point"
+
+  - claim: "The optical gaps, from thin film absorption onsets, are ≈0.90 eV."
+    instruction:
+      - "1. Prepare thin films of the polymers"
+      - "Measure UV-vis absorption spectra of the thin films"
+      - "Determine the absorption onset for each polymer"
+      - "Calculate the optical gap using the absorption onset"
+      - "Expected result: Optical gap ≈ 0.90 eV for all polymers"
+
+  - claim: "P4 exhibits the least positive value of the onset of the oxidation potential, while P1 exhibits the most positive (...) amongst all polymers in this study."
+    instruction:
+      - "1. Perform cyclic voltammetry (CV) measurements on P1, P2, P3, and P4"
+      - "Determine the onset of the oxidation potential for each polymer from the CV curves"
+      - "Expected result: P4 has the least positive onset oxidation potential, and P1 has the most positive onset oxidation potential"
+
+non_reproducible_claims:
+  - claim: "Density functional theory calculations reveal molecular geometries and inform about frontier energy levels."
+    reason: "reason: practical_limits
+explanation: While DFT calculations are described, specific parameters and basis sets are mentioned but full reproduction requires specialized software and potentially considerable computational resources.  Precise software versions, settings, and other necessary details are not provided."
+
+  - claim: "The ratio of ICT:CTC polymorphs are 1.25, 1.33, 6, and 8 for p-DPP(TT)2-(EDOT)2 (P1), p-DPP(EDOT)2-(EDOT)2, (P2) p-DPP(TT)2-(MEET)2 (P3), and p-DPP(EDOT)2-(MEET)2 (P4), respectively, on doping with F4TCNQ."
+    reason: "reason: data_unavailable
+explanation: The raw FTIR spectra needed to calculate the ICT:CTC ratios are not provided, only the final calculated values are mentioned."
+
+  - claim: "The highest charge density ≈10[21] cm−3 was also obtained for (P4) on doping with CF3SO3H."
+    reason: "reason: data_unavailable
+explanation: The raw data and complete methodology for the remote-gate measurements are not provided, only the final calculated charge density is mentioned."
+

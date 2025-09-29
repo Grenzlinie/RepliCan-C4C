@@ -1,0 +1,50 @@
+username: "yicao-elina"
+paper_title: "Transferable Force Field for Gallium Nitride Crystal Growth from the Melt Using On-The-Fly Active Learning"
+paper_pdf: "https://pubs.acs.org/doi/pdf/10.1021/acs.jctc.3c00532?ref=article_openPDF"
+identifier: "https://doi.org/10.1021/acs.jctc.3c00532"
+code_url: "NOT_SPECIFIED"
+data_url: "NOT_SPECIFIED"
+
+claims:
+  - claim: "The MAE between the atomic forces from DFT calculations and those of the GP prediction was around 0.1 eV/Å with only 46 DFT calls."
+    instruction:
+      - "1. Train a FLARE++ model on 64 gallium atoms in a periodic simulation box"
+      - "Run the MD training under NPT conditions at 1 bar for 10 ps at 100 K and 2000 K"
+      - "Calculate the mean absolute error (MAE) between DFT-calculated forces and FLARE++ predicted forces"
+      - "Expected MAE is around 0.1 eV/Å"
+
+  - claim: "The MAE of atomic forces in the first 5 ps was 0.16 eV/Å with 11 DFT calls. Once the system temperature increased to 6000 K, the MAE increased to 0.4 eV/Å with 491 DFT calls."
+    instruction:
+      - "1. Perform OTF training of a 64-atom GaN system with a Nosé−Hoover thermostat using FLARE++"
+      - "Start training at 1000 K for 5 ps"
+      - "Adjust the temperature to 6000 K for another 5 ps"
+      - "Calculate MAE between DFT and FLARE++ forces for both temperature regimes"
+      - "Expected MAE is 0.16 eV/Å at 1000 K and 0.4 eV/Å at 6000 K"
+
+  - claim: "The nitrogen diffusivity was estimated to be 0.71 cm²/s at 300 K and atmospheric pressure."
+    instruction:
+      - "1. Use the combined FLARE++ force field in LAMMPS"
+      - "Equilibrate the simulation box in NPT ensemble at atmospheric pressure and 300 K"
+      - "Run NVT ensemble using a Nosé−Hoover thermostat for 5 ns"
+      - "Run NVE ensemble for 5 ns"
+      - "Calculate the nitrogen self-diffusivity from the mean squared displacement"
+      - "Expected diffusivity is 0.71 cm²/s"
+
+  - claim: "Our prediction of the melting point was 3067 K at 6 GPa."
+    instruction:
+      - "1. Create a simulation box of 6912 atoms with a solid-liquid interface using the combined FLARE++ force field in LAMMPS"
+      - "Relax the system at 2800 K and 6 GPa in NPT ensemble for 1 ns"
+      - "Heat the liquid phase to 3250 K over 4 ns and equilibrate for another 4 ns in NPT"
+      - "Remove constraints and relax in NVE ensemble for 4 ns"
+      - "Decrease the temperature in 100 K increments and monitor density profile and Ga-N coordination number"
+      - "Determine the melting point when the solid-liquid interface velocity is zero and equal volumes of solid and liquid are observed"
+      - "Expected melting point is 3067 K"
+
+  - claim: "The percentage of atoms crystallized into hexagonal structures was 86.7%."
+    instruction:
+      - "1. Set up a sandwich-like simulation with 4 layers of crystalline wz-GaN(001) sandwiched between 2000 gallium and 2000 nitrogen atoms"
+      - "Fix the inner two layers of the crystal"
+      - "Simulate at 2000 K in NVT ensemble for 4 ns using the combined FLARE++ force field in LAMMPS"
+      - "Calculate the Steinhardt order parameters and use OVITO to identify crystal structures"
+      - "Expected percentage of hexagonal structures is 86.7%"
+
