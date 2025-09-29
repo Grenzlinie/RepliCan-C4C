@@ -1,0 +1,56 @@
+username: "yicao-elina"
+paper_title: "Stable GaSe-Like Phosphorus Carbide Monolayer with Tunable Electronic and Optical Properties from Ab Initio Calculations"
+paper_pdf: "N/A"
+identifier: "N/A"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "GaSe-like monolayer PC has a cohesive energy of 5.46 eV/atom."
+    instruction:
+      - "1. Construct a GaSe-like monolayer PC unit cell (4 atoms)"
+      - "DFT setup in VASP:
+   - Exchange-correlation: PBE functional with vdW corrections (likely Grimme D2 or D3, not explicitly stated)
+   - Pseudopotentials: PAW
+   - Kinetic energy cutoff: 500 eV
+   - Vacuum: 20 Å"
+      - "Relax atomic positions until forces < 0.01 eV/Å and energy change < 10⁻⁵ eV"
+      - "Calculate cohesive energy: Ec = (E_total - 2*E_C - 2*E_P) / 4, where E_total is the total energy of the unit cell, E_C and E_P are the energies of isolated C and P atoms, respectively"
+      - "Expected result: -5.46 eV/atom"
+
+  - claim: "GaSe-like monolayer PC has a direct band gap of 1.80 eV (PBE) and 2.65 eV (HSE06)."
+    instruction:
+      - "1. Use the relaxed structure from the previous calculation"
+      - "DFT setup in VASP:
+   - Exchange-correlation: PBE or HSE06 functional
+   - Pseudopotentials: PAW
+   - Kinetic energy cutoff: 500 eV
+   - K-points: Not explicitly mentioned, needs convergence testing"
+      - "Perform a self-consistent field (SCF) calculation"
+      - "Calculate the band structure"
+      - "Extract the band gap at the K point"
+      - "Expected result: 1.80 eV (PBE), 2.65 eV (HSE06)"
+
+  - claim: "One carbon vacancy (VC) in a 4x4x1 supercell of GaSe-like monolayer PC induces a magnetic moment of 1.22 µB."
+    instruction:
+      - "1. Construct a 4x4x1 supercell of GaSe-like monolayer PC (64 atoms)"
+      - "Remove one carbon atom to create a vacancy"
+      - "DFT setup in VASP:
+   - Exchange-correlation: PBE functional with vdW corrections
+   - Pseudopotentials: PAW
+   - Kinetic energy cutoff: 500 eV
+   - K-points: likely Gamma-centered, needs convergence testing.
+   - Spin-polarized calculation"
+      - "Relax atomic positions until forces < 0.01 eV/Å and energy change < 10⁻⁵ eV"
+      - "Extract the total magnetic moment"
+      - "Expected result: 1.22 µB"
+
+non_reproducible_claims:
+  - claim: "The 2D PC monolayer can be a promising candidate for photocatalytic water splitting."
+    reason: "reason: practical_limits
+explanation: While band edge alignments and optical absorption are calculated, actual photocatalytic activity requires further investigation and experimental validation."
+
+  - claim: "The 2D PC may possess a higher electronic mobility than the 2H-MoS2 monolayer."
+    reason: "reason: practical_limits
+explanation: Effective masses are calculated, but mobility depends on other factors and requires more complex calculations or experimental measurements."
+

@@ -1,0 +1,64 @@
+username: "yicao-elina"
+paper_title: "First-principles study on the structural and electronic properties of monolayer MoS2 with S-vacancy under uniaxial tensile strain"
+paper_pdf: "N/A"
+identifier: "N/A"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "The lattice constant of monolayer MoS2 is 3.166 Å."
+    instruction:
+      - "1. Create a unit cell of monolayer MoS2"
+      - "DFT setup in VASP:
+   - Exchange-correlation: PBE functional
+   - Pseudopotentials: PAW
+   - K-points: 12×12×1 Monkhorst-Pack grid
+   - Kinetic energy cutoff: 450 eV
+   - Energy convergence: 1.0 × 10−6 eV
+   - Force convergence: 0.01 eV/Å"
+      - "Relax the unit cell"
+      - "Extract the lattice constant"
+      - "Expected result: 3.166 Å"
+
+  - claim: "The band gap of perfect monolayer MoS2 is about 1.77 eV at zero strain."
+    instruction:
+      - "1. Create a unit cell of monolayer MoS2"
+      - "DFT setup in VASP (same as above)"
+      - "Relax the unit cell"
+      - "Perform a self-consistent field (SCF) calculation"
+      - "Calculate the band structure"
+      - "Extract the band gap"
+      - "Expected result: 1.77 eV"
+
+  - claim: "The band gaps of monolayer MoS2 with one-sulfur vacancy (V1S) and two-sulfur vacancy (V2S) are 0.72 eV and 0.73 eV, respectively."
+    instruction:
+      - "1. Create a 3x3x1 supercell of monolayer MoS2"
+      - "Create V1S by removing one S atom"
+      - "Create V2S by removing two S atoms"
+      - "DFT setup in VASP (same as above)"
+      - "Relax the supercells"
+      - "Perform SCF calculations"
+      - "Calculate the band structures"
+      - "Extract the band gaps"
+      - "Expected results: V1S = 0.72 eV, V2S = 0.73 eV"
+
+  - claim: "Young’s modulus and ultimate tensile strength of perfect MoS2 are 315 GPa and 33.2 GPa, respectively, in the x-direction."
+    instruction:
+      - "1. Create a 3x3x1 supercell of monolayer MoS2"
+      - "DFT setup in VASP (same as above)"
+      - "Apply incremental uniaxial tensile strain in the x-direction (0-30% strain)"
+      - "Relax the atomic positions at each strain step"
+      - "Calculate the stress-strain curve"
+      - "Extract Young's modulus from the linear region of the stress-strain curve"
+      - "Extract the ultimate tensile strength from the maximum stress value"
+      - "Expected results: Young's modulus = 315 GPa, Ultimate tensile strength = 33.2 GPa"
+
+non_reproducible_claims:
+  - claim: "The existence of vacancies can weaken the stiffness and strength of the MoS2 sheet."
+    reason: "reason: data_unavailable
+explanation: While the paper provides values for Young's modulus and ultimate tensile strength for defective MoS2, the raw stress-strain data for V1S and V2S are not available, making it difficult to precisely reproduce the weakening effect."
+
+  - claim: "The strains also have a huge impact on the band gap of defected MoS2 sheets because of the relaxation near the vacancy."
+    reason: "reason: data_unavailable
+explanation: The paper presents the band gap variation with strain for defective MoS2, but the precise numerical data for each strain step are not provided, hindering precise reproduction."
+

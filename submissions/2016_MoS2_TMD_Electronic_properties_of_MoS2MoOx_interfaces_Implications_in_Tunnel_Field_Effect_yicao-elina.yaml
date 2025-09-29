@@ -1,0 +1,68 @@
+username: "yicao-elina"
+paper_title: "Electronic properties of MoS2/MoOx interfaces: Implications in Tunnel Field Effect Transistors and Hole Contacts"
+paper_pdf: "https://www.nature.com/articles/srep33703"
+identifier: "srep33703"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "Bulk MoO3 has an indirect band gap of 1.9 eV (GGA) and 2.7 eV (HSE)."
+    instruction:
+      - "1. Construct a unit cell of α-MoO3 (orthorhombic, space group Pbnm) with lattice parameters a = 3.962 Å, b = 13.855 Å, and c = 3.699 Å"
+      - "DFT setup in VASP:
+   - Exchange-correlation: GGA (PBE) or HSE06
+   - Pseudopotentials: PAW
+   - Plane-wave cutoff energy: 500 eV
+   - K-points: 6x6x1 (SCF), 12x12x1 (DOS)
+   - Energy convergence: 10^-5 eV
+   - Force convergence: 0.01 eV/Å"
+      - "Perform SCF calculation"
+      - "Calculate band structure along high-symmetry path"
+      - "Extract indirect band gap (VBM at U, CBM at Γ)"
+      - "Expected results: GGA = 1.9 eV, HSE = 2.7 eV"
+
+  - claim: "Monolayer MoO3 has an indirect band gap of 1.804 eV (GGA) and 2.86 eV (HSE)."
+    instruction:
+      - "1. Construct a monolayer MoO3 structure from the bulk (010) plane"
+      - "DFT setup in VASP (similar to bulk calculation)"
+      - "Perform SCF calculation"
+      - "Calculate band structure"
+      - "Extract indirect band gap"
+      - "Expected results: GGA = 1.804 eV, HSE = 2.86 eV"
+
+  - claim: "The MoS2/MoO3 interface has a reduced band gap of ~0.22 eV (GGA) and 0.51 eV (HSE)."
+    instruction:
+      - "1. Construct a MoS2/MoO3 interface using MoS2 (001) and MoO3 (010) monolayers"
+      - "Optimize the interlayer distance using vdW-D2 correction"
+      - "DFT setup in VASP (similar to previous calculations)"
+      - "Perform SCF calculation"
+      - "Calculate DOS"
+      - "Determine the band gap of the combined system"
+      - "Expected results: GGA ~ 0.22 eV, HSE ~ 0.51 eV"
+
+  - claim: "Oxygen vacancy in MoO3 creates defect states close to the CBM."
+    instruction:
+      - "1. Construct a MoO3 supercell (e.g., 4x1x4 as mentioned in the paper)"
+      - "Remove one oxygen atom to create a vacancy"
+      - "DFT setup in VASP (similar to previous calculations)"
+      - "Perform SCF calculation"
+      - "Calculate DOS"
+      - "Analyze the DOS for defect states near the CBM"
+
+non_reproducible_claims:
+  - claim: "MoOx has a work function of ~6.67 eV."
+    reason: "reason: practical_limits
+explanation: Work function calculations are sensitive to slab setup and vacuum size, making precise reproduction challenging without the exact setup details."
+
+  - claim: "Oxygen vacancy formation energy is ~2 eV lower than Mo vacancy."
+    reason: "reason: practical_limits
+explanation: Formation energy depends on the chemical potentials of Mo and O, which are not explicitly provided in the paper, making precise reproduction difficult."
+
+  - claim: "MoS2/MoOx interface shows Ohmic behavior."
+    reason: "reason: non_computational
+explanation: Ohmic behavior is an electrical property that requires transport calculations or experiments, not directly obtainable from the presented DFT calculations."
+
+  - claim: "Experimental observations confirm the p-type contact behavior of MoOx with MoS2 and WSe2."
+    reason: "reason: non_computational
+explanation: This claim relies on experimental validation, which is outside the scope of DFT calculations."
+

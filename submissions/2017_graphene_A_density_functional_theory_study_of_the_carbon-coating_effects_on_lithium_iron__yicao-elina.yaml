@@ -1,0 +1,53 @@
+username: "yicao-elina"
+paper_title: "A density functional theory study of the carbon-coating effects on lithium iron borate battery electrodes"
+paper_pdf: "https://pubs.rsc.org/en/content/articlelookup/2017/cp/c6cp06475a"
+identifier: "c6cp06475a"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "The lattice parameters for the LiFeBO3 unit cell were found to be a = 5.168 Å, b = 9.109 Å, c = 10.349 Å and β = 91.281°"
+    instruction:
+      - "1. Start with experimental lattice constants: a = 5.1350 Å, b = 9.0437 Å, c = 10.2907 Å, β = 91.0311°"
+      - "DFT setup in VASP:
+   - Exchange-correlation: PBE + U (U = 4.3 eV for Fe 3d orbitals)
+   - Pseudopotentials: PAW (1s core for Li, B, O; 1s, 2s, 2p, 3s, 3p core for Fe)
+   - K-points: 4×2×2 Monkhorst-Pack grid
+   - Kinetic energy cutoff: 500 eV"
+      - "Relax unit cell and internal coordinates until forces < 0.05 eV/Å using FIRE algorithm"
+      - "Expected result: a = 5.168 Å, b = 9.109 Å, c = 10.349 Å, β = 91.281°"
+
+  - claim: "The lattice parameters of the FeBO3 unit cell were found to be a = 5.308 Å, b = 8.989 Å, c = 10.188 Å and β = 89.401°"
+    instruction:
+      - "1. Similar setup as for LiFeBO3 relaxation (PBE+U, PAW, 4x2x2 k-points, 500 eV cutoff)"
+      - "Relax unit cell and internal coordinates until forces < 0.05 eV/Å using FIRE algorithm"
+      - "Expected result: a = 5.308 Å, b = 8.989 Å, c = 10.188 Å, β = 89.401°"
+
+  - claim: "The (001) surface energy of LiFeBO3 is approximately 15 meV/Å²."
+    instruction:
+      - "1. Create slabs of LiFeBO3 with (100), (010), and (001) orientations"
+      - "Perform DFT calculations with the same settings as bulk relaxation"
+      - "Calculate surface energy using the formula: E_surf = (E_slab - n * E_bulk) / (2A), where E_slab is the total energy of the slab, n is the number of formula units in the slab, E_bulk is the energy per formula unit of bulk LiFeBO3, and A is the surface area"
+      - "Expected result: (001) surface energy ≈ 15 meV/Å²"
+
+  - claim: "The most stable anchoring configuration for the carbon coating on LiFeBO3 is perpendicular to the (001) surface, with coating-edge C atoms bonding to surface B and O atoms."
+    instruction:
+      - "1. Create a LiFeBO3 (001) surface slab"
+      - "Create a graphene/graphite layer and place it perpendicular to the surface, with edge C atoms near B and O atoms"
+      - "Relax the structure using the same DFT settings as before"
+      - "Compare the energy of this configuration with other possible anchoring configurations (e.g., C atoms bonding to Fe atoms)"
+      - "Expected result: The perpendicular configuration with C-B and C-O bonds is the most stable"
+
+non_reproducible_claims:
+  - claim: "TEM images show misalignment between the electrode particles and carbon coating."
+    reason: "reason: non_computational
+explanation: Requires experimental TEM measurements."
+
+  - claim: "The overall electrochemical performance is observed to improve with carbon coating."
+    reason: "reason: practical_limits
+explanation: Requires electrochemical experiments and device fabrication."
+
+  - claim: "The graphite coating could act as a filter allowing Li ions to diffuse relatively easily while preventing O2 from reaching the electrode surface."
+    reason: "reason: practical_limits
+explanation: Requires complex diffusion simulations and experimental validation."
+

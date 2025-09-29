@@ -1,0 +1,49 @@
+username: "yicao-elina"
+paper_title: "Enhanced Magnetism and Anomalous Hall Transport through Two-Dimensional Tungsten Disulﬁde Interfaces"
+paper_pdf: "https://www.mdpi.com/2079-4991/13/4/771/pdf"
+identifier: "10.3390/nano13040771"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "The interlayer distances d are smaller than typical van der Waals separations, which are usually ≥ 3 Å."
+    instruction:
+      - "1. Construct supercells of WS2 on B- and AB-terminated cubic Fe3O4(110) and B- and A-terminated monoclinic Fe3O4(110) as described in the "Methods" section of the paper (using VASP with PBE functional, DFT-D3 van der Waals correction, Γ-point sampling, 450 eV cutoff). Specific supercell sizes and atomic coordinates are not provided in the paper but can be inferred from the described methodology"
+      - "Relax the top two layers of the Fe3O4 slab while keeping the remaining layers fixed"
+      - "Measure the interlayer distance d between WS2 and Fe3O4"
+      - "Expected result: d < 3 Å for all considered heterostructures (see Table 1 in the paper)"
+
+  - claim: "The binding energies between WS2 and Fe3O4 Eb ∼(−20, −35) meV are consistent with weaker interactions indicative of van der Waals coupling."
+    instruction:
+      - "1. Follow steps 1 and 2 from the previous claim"
+      - "Calculate the binding energy Eb using the formula: Eb = (EHST − ∑i Elayer_i) / N, where EHST is the total energy of the heterostructure, Elayer_i is the total energy of the ith isolated layer, and N is the number of atoms in the supercell"
+      - "Expected result: Eb between -20 and -35 meV for all considered heterostructures (see Table 1 in the paper)"
+
+  - claim: "The average magnetic moments of the two inequivalent Fe (A and B) and the O atoms show that the direction of the atomic spin polarization is preserved regardless of the WS2 presence."
+    instruction:
+      - "1. Follow steps 1 and 2 from the first claim"
+      - "Calculate the average magnetic moments (mFeA, mFeB, mO) for the Fe and O atoms in the Fe3O4 layer"
+      - "Compare the direction and magnitude of the magnetic moments with and without the WS2 layer"
+      - "Expected result: The direction of the atomic spin polarization should be preserved, and the magnitudes of mFeA, mFeB, and mO should not change significantly (see Table 1 in the paper)"
+
+non_reproducible_claims:
+  - claim: "The presence of monolayer WS2 flakes reduces the magnetization of BPIO and hence the total magnetization of Pt/WS2/BPIO at T > ~120 K"
+    reason: "reason: data_unavailable
+explanation: Precise experimental details for sample preparation (e.g., WS2 flake coverage, exact BPIO composition) are not provided, making precise reproduction difficult."
+
+  - claim: "An enhanced magnetization is achieved at T < TV."
+    reason: "reason: data_unavailable
+explanation: Similar to the previous claim, precise experimental details are lacking."
+
+  - claim: "Raman spectroscopy confirms the coexistence of Fe3O4 and α-Fe2O3 phases."
+    reason: "reason: non_computational
+explanation: Requires experimental Raman measurements."
+
+  - claim: "Resistivity measurements show a minimum at low temperature due to e-e scattering and Kondo-like behaviors."
+    reason: "reason: data_unavailable
+explanation: While the fitting procedure is described, the raw resistivity data is not available for independent verification."
+
+  - claim: "Anomalous Hall resistivity enhancement at low temperatures is observed in Pt/WS2/BPIO."
+    reason: "reason: data_unavailable
+explanation: Raw AHE data is not available for independent analysis and verification."
+

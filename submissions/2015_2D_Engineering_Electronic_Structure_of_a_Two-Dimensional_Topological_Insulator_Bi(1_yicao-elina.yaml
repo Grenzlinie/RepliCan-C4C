@@ -1,0 +1,48 @@
+username: "yicao-elina"
+paper_title: "Engineering electronic structure of a 2D topological insulator Bi(111) bilayer on Sb nanofilms by quantum confinement effect"
+paper_pdf: "https://arxiv.org/pdf/1511.02417v1.pdf"
+identifier: "1511.02417v1"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "A pair of isolated topological edge states emerges in a partial energy gap at 0.32 eV above the Fermi level."
+    instruction:
+      - "1. Construct a Bi(111) bilayer on a 4-BL Sb(111) film. The Bi bilayer is strained to match the Sb lattice constant (a=4.307 Å).  The atomic structure is optimized by relaxing all atomic coordinates until forces are smaller than 0.01 eV/Å"
+      - "Use VASP with the following settings:
+   - Exchange-correlation: PBE functional
+   - Plane-wave cutoff: 400 eV
+   - K-point mesh: 11x11x1 for bulk calculations, 1x11x1 for ribbon calculations.
+   - Vacuum layer: > 15 Å"
+      - "Calculate the electronic band structure"
+      - "To confirm the presence of edge states, perform a calculation on a Bi BL nanoribbon (8 zigzag atomic chains wide) on a 4 BL Sb substrate"
+      - "Analyze the edge-weighted band structure to identify the topological edge states within the partial energy gap around 0.32 eV above the Fermi level"
+      - "Expected result: A single pair of edge states within the partial gap, localized at the edges of the Bi nanoribbon"
+
+  - claim: "The Bi-derived Rashba states strongly hybridize with the Sb bulk state in the outer part (farther away from Γ), while the inner part remains tightly localized within the Bi overlayer."
+    instruction:
+      - "1. Use the same relaxed structure of Bi(111) bilayer on 4-BL or 20-BL Sb(111) film as in the previous claim"
+      - "Perform DFT calculations using VASP with the settings described above"
+      - "Calculate the electronic band structure and project the states onto Bi 6p orbitals"
+      - "Analyze the band structure and orbital projections to observe the hybridization of Bi-derived Rashba states with Sb bulk states in the outer region and the localization of Bi states in the inner region near Γ"
+
+  - claim: "The band structure around the central crossing point of Bi1 band resembles a massless 2D electron gas (2DEG)."
+    instruction:
+      - "1. Use the same relaxed structure and DFT settings as described in the previous claims"
+      - "Calculate the electronic band structure"
+      - "Analyze the band structure around the central crossing point of the Bi1 band"
+      - "Expected result: Linear dispersion resembling a massless 2DEG"
+
+non_reproducible_claims:
+  - claim: "ARPES measurements demonstrate the evolution of the electronic band structure."
+    reason: "reason: non_computational
+explanation: Requires experimental ARPES measurements."
+
+  - claim: "The required gate voltage is about 3 V for a dielectric thickness of 10 Å."
+    reason: "reason: practical_limits
+explanation: Requires device fabrication and electrical measurements."
+
+  - claim: "RHEED was employed to monitor the surface condition during the growth process."
+    reason: "reason: non_computational
+explanation: Requires experimental RHEED measurements."
+

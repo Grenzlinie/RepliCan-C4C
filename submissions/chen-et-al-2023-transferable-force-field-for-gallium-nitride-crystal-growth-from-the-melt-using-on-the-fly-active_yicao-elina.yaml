@@ -1,50 +1,62 @@
 username: "yicao-elina"
 paper_title: "Transferable Force Field for Gallium Nitride Crystal Growth from the Melt Using On-The-Fly Active Learning"
-paper_pdf: "https://pubs.acs.org/doi/pdf/10.1021/acs.jctc.3c00532?ref=article_openPDF"
-identifier: "https://doi.org/10.1021/acs.jctc.3c00532"
-code_url: "NOT_SPECIFIED"
-data_url: "NOT_SPECIFIED"
+paper_pdf: "https://pubs.acs.org/doi/10.1021/acs.jctc.3c00531"
+identifier: "10.1021/acs.jctc.3c00531"
+code_url: ""
+data_url: ""
 
 claims:
-  - claim: "The MAE between the atomic forces from DFT calculations and those of the GP prediction was around 0.1 eV/Å with only 46 DFT calls."
+  - claim: "Melting temperature of gallium is estimated to be 308 K."
     instruction:
-      - "1. Train a FLARE++ model on 64 gallium atoms in a periodic simulation box"
-      - "Run the MD training under NPT conditions at 1 bar for 10 ps at 100 K and 2000 K"
-      - "Calculate the mean absolute error (MAE) between DFT-calculated forces and FLARE++ predicted forces"
-      - "Expected MAE is around 0.1 eV/Å"
+      - "1. Use the combined FLARE++ force field (Ga, N2, GaN) mapped to LAMMPS"
+      - "Create a supercell of 4096 gallium atoms"
+      - "Perform NPT simulations at 1 bar from 100 K to 1000 K in 50 K increments"
+      - "Equilibrate for 1 ns at each temperature with a 1 fs timestep"
+      - "Monitor density changes to identify the melting point"
+      - "Expected result: ~308 K (close to experimental 302.92 K)"
 
-  - claim: "The MAE of atomic forces in the first 5 ps was 0.16 eV/Å with 11 DFT calls. Once the system temperature increased to 6000 K, the MAE increased to 0.4 eV/Å with 491 DFT calls."
-    instruction:
-      - "1. Perform OTF training of a 64-atom GaN system with a Nosé−Hoover thermostat using FLARE++"
-      - "Start training at 1000 K for 5 ps"
-      - "Adjust the temperature to 6000 K for another 5 ps"
-      - "Calculate MAE between DFT and FLARE++ forces for both temperature regimes"
-      - "Expected MAE is 0.16 eV/Å at 1000 K and 0.4 eV/Å at 6000 K"
-
-  - claim: "The nitrogen diffusivity was estimated to be 0.71 cm²/s at 300 K and atmospheric pressure."
+  - claim: "Nitrogen diffusivity is 0.71 cm²/s at 300 K and atmospheric pressure."
     instruction:
       - "1. Use the combined FLARE++ force field in LAMMPS"
-      - "Equilibrate the simulation box in NPT ensemble at atmospheric pressure and 300 K"
-      - "Run NVT ensemble using a Nosé−Hoover thermostat for 5 ns"
-      - "Run NVE ensemble for 5 ns"
-      - "Calculate the nitrogen self-diffusivity from the mean squared displacement"
-      - "Expected diffusivity is 0.71 cm²/s"
+      - "Equilibrate the system in NPT at 300 K and 1 bar for 5 ns"
+      - "Switch to NVT with a Nose-Hoover thermostat for another 5 ns"
+      - "Run NVE for 5 ns and calculate the mean squared displacement (MSD)"
+      - "Extract diffusivity from the linear region of MSD vs. time"
+      - "Expected result: 0.71 cm²/s"
 
-  - claim: "Our prediction of the melting point was 3067 K at 6 GPa."
+  - claim: "Lattice parameters of wurtzite GaN deviate by a maximum of 0.2% from experimental values using the combined FLARE++ model."
     instruction:
-      - "1. Create a simulation box of 6912 atoms with a solid-liquid interface using the combined FLARE++ force field in LAMMPS"
-      - "Relax the system at 2800 K and 6 GPa in NPT ensemble for 1 ns"
-      - "Heat the liquid phase to 3250 K over 4 ns and equilibrate for another 4 ns in NPT"
-      - "Remove constraints and relax in NVE ensemble for 4 ns"
-      - "Decrease the temperature in 100 K increments and monitor density profile and Ga-N coordination number"
-      - "Determine the melting point when the solid-liquid interface velocity is zero and equal volumes of solid and liquid are observed"
-      - "Expected melting point is 3067 K"
+      - "1. Use the combined FLARE++ force field in LAMMPS"
+      - "Relax a wurtzite GaN structure"
+      - "Extract lattice parameters a and c"
+      - "Compare with experimental values (a=3.22 Å, c=5.24 Å)"
+      - "Expected maximum deviation: 0.2%"
 
-  - claim: "The percentage of atoms crystallized into hexagonal structures was 86.7%."
+  - claim: "The elastic tensor of GaN has an RMSE of 28 GPa compared to experimental values using the combined FLARE++ model."
     instruction:
-      - "1. Set up a sandwich-like simulation with 4 layers of crystalline wz-GaN(001) sandwiched between 2000 gallium and 2000 nitrogen atoms"
-      - "Fix the inner two layers of the crystal"
-      - "Simulate at 2000 K in NVT ensemble for 4 ns using the combined FLARE++ force field in LAMMPS"
-      - "Calculate the Steinhardt order parameters and use OVITO to identify crystal structures"
-      - "Expected percentage of hexagonal structures is 86.7%"
+      - "1. Use the combined FLARE++ force field in LAMMPS"
+      - "Apply small deformations (0.0001%) to a wurtzite GaN supercell"
+      - "Calculate stress tensor derivatives to obtain elastic constants"
+      - "Compare with experimental values and calculate RMSE"
+      - "Expected RMSE: 28 GPa"
+
+  - claim: "Melting point of GaN is estimated to be 3067 K at 6 GPa."
+    instruction:
+      - "1. Use the combined FLARE++ force field in LAMMPS"
+      - "Create a 6912-atom simulation box with a solid-liquid interface"
+      - "Relax at 2800 K and 6 GPa in NPT for 1 ns"
+      - "Heat the liquid region to 3250 K over 4 ns, then equilibrate for 4 ns"
+      - "Remove constraints and relax in NVE for 4 ns"
+      - "Decrease temperature in 100 K steps and monitor density and Ga-N coordination"
+      - "Identify melting point where solid and liquid regions have equal volume and zero interface velocity"
+      - "Expected result: 3067 K"
+
+non_reproducible_claims:
+  - claim: "Raman spectroscopy confirms N incorporation."
+    reason: "reason: non_computational
+explanation: Requires experimental Raman measurements."
+
+  - claim: "The AM growth model used by Gagnon et al. underestimates the observed growth rate."
+    reason: "reason: data_unavailable
+explanation: Requires access to the specific growth model and experimental data used by Gagnon et al."
 

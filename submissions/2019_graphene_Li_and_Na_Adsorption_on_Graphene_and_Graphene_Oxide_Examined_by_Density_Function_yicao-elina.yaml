@@ -1,0 +1,72 @@
+username: "yicao-elina"
+paper_title: "Li and Na Adsorption on Graphene and Graphene Oxide Examined by Density Functional Theory, Quantum Theory of Atoms in Molecules, and Electron Localization Function"
+paper_pdf: "N/A"
+identifier: "molecules-24-00754"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "Li adsorption on pristine graphene is unstable at all coverages examined (1/32, 3/32, 5/32 ML)."
+    instruction:
+      - "1. Create a 4x4x1 supercell of pristine graphene (32 C atoms)"
+      - "Place 1, 3, or 5 Li atoms at various initial positions above the graphene sheet (hollow site for 1/32 ML)"
+      - "DFT setup in CRYSTAL17:
+   - Functional: PBE0
+   - Basis sets: pob-TZVP for C, 6s3p1d for Li
+   - Grimme D2 dispersion correction
+   - K-points: 12x12x1 Monkhorst-Pack grid for geometry optimization
+   - SCF energy threshold: 10^-9 Hartrees"
+      - "Perform geometry optimization"
+      - "Calculate adsorption energy (E_ads) using Equation (1) in the paper"
+      - "Expected result: E_ads < 1.63 eV/Li (less negative than bulk Li binding energy) for all coverages"
+
+  - claim: "Na adsorption on pristine graphene is unstable at all coverages examined (1/32, 3/32, 5/32 ML)."
+    instruction:
+      - "1. Create a 4x4x1 supercell of pristine graphene (32 C atoms)"
+      - "Place 1, 3, or 5 Na atoms at various initial positions above the graphene sheet (hollow site for 1/32 ML)"
+      - "DFT setup in CRYSTAL17:
+   - Functional: PBE0
+   - Basis sets: pob-TZVP for C, 9s5p1d for Na
+   - Grimme D2 dispersion correction
+   - K-points: 12x12x1 Monkhorst-Pack grid for geometry optimization
+   - SCF energy threshold: 10^-9 Hartrees"
+      - "Perform geometry optimization"
+      - "Calculate adsorption energy (E_ads) using Equation (1) in the paper"
+      - "Expected result: E_ads < 1.13 eV/Na (less negative than bulk Na binding energy) for all coverages"
+
+  - claim: "Li adsorption on single vacancy defective graphene is stable and has some covalent character."
+    instruction:
+      - "1. Create a 4x4x1 supercell of graphene (32 C atoms)"
+      - "Introduce a single vacancy by removing one C atom and replacing it with a "ghost" atom"
+      - "Place a Li atom above the vacancy"
+      - "DFT setup in CRYSTAL17 (same as for Li on pristine graphene)"
+      - "Perform geometry optimization"
+      - "Calculate E_ads (Equation 1), COOP for Li-C, QTAIM properties at Li-C bond critical point, and ELF"
+      - "Expected result: E_ads > 1.63 eV/Li, significant COOP value, QTAIM and ELF indicators of covalent character"
+
+  - claim: "Graphene oxide (GO) with O/C = 43.75% has a band gap of 4.40 eV."
+    instruction:
+      - "1. Create a 4x4x1 supercell of graphene"
+      - "Introduce epoxides and hydroxyls to achieve O/C = 43.75% (25% epoxides, 18.75% hydroxyls relative to C), following the structure proposed by Zhou and Bongiorno [46]"
+      - "DFT setup in CRYSTAL17 (same as for adsorption calculations, but without adsorbates)"
+      - "Perform geometry optimization"
+      - "Calculate band structure"
+      - "Expected result: Band gap of 4.40 eV"
+
+non_reproducible_claims:
+  - claim: "Increased LIB graphene capacities relative to graphite seem indicative of increased Li atoms being adsorbed on graphene relative to graphite."
+    reason: "reason: non_computational
+explanation: Relates to experimental LIB capacity measurements."
+
+  - claim: "The contrary has been observed via in situ Raman spectroscopy."
+    reason: "reason: non_computational
+explanation: Requires experimental Raman measurements."
+
+  - claim: "Li forms clusters due to the small Li diffusion barrier on graphene support."
+    reason: "reason: practical_limits
+explanation: Diffusion barrier calculations are computationally demanding, especially for larger systems."
+
+  - claim: "Temperature and pressure effects will be described in a future work."
+    reason: "reason: data_unavailable
+explanation: Not included in the current paper."
+

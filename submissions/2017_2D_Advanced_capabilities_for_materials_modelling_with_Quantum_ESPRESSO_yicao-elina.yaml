@@ -1,0 +1,50 @@
+username: "yicao-elina"
+paper_title: "Advanced capabilities for materials modelling with Quantum ESPRESSO"
+paper_pdf: "https://iopscience.iop.org/article/10.1088/1361-648X/aa8f79/pdf"
+identifier: "10.1088/1361-648X/aa8f79"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "Adaptively Compressed Exchange (ACE) offers a 3x to 4x speedup for typical calculations in molecules and up to 6x in extended systems."
+    instruction:
+      - "This claim refers to a relative performance improvement rather than a specific material property.  While the paper describes the ACE algorithm and its implementation in Quantum Espresso, it doesn't provide specific input files or parameters to reproduce the claimed speedups.  Reproducing this would require benchmarking calculations with and without ACE on various systems, comparing execution times.  General instructions would be:"
+      - "Select a representative molecule or extended system"
+      - "Prepare input files for a DFT calculation with hybrid functionals using Quantum Espresso"
+      - "Perform the calculation with ACE enabled (using the relevant keywords)"
+      - "Perform the same calculation with ACE disabled"
+      - "Compare the execution times to assess the speedup"
+
+  - claim: "Linear-scaling (O(Nb)) framework for hybrid-functional ab initio molecular dynamics using maximally localized Wannier functions (MLWF) shows excellent scaling up to 30720 cores for α-glycine and 65536 cores for (H2O)256."
+    instruction:
+      - "Similar to the ACE claim, this focuses on scaling performance.  The paper describes the MLWF-based hybrid functional approach in CP, but doesn't give specific input files for the mentioned systems. Reproducing the scaling would require:"
+      - "Obtain or generate input structures for α-glycine and (H2O)256"
+      - "Prepare input files for Car-Parrinello MD using hybrid functionals and MLWFs in Quantum Espresso's CP code"
+      - "Run the calculations on different numbers of cores (up to the mentioned limits if possible)"
+      - "Analyze the execution times to assess the scaling behavior"
+
+non_reproducible_claims:
+  - claim: "vdW-DF calculations have compute times only insignificantly longer than standard GGA functionals."
+    reason: "reason: practical_limits
+explanation: While generally true, the exact difference depends on the specific system and computational setup. The paper doesn't provide specific examples or parameters to reproduce a precise comparison."
+
+  - claim: "XDM offers good performance in calculating lattice energies, crystal geometries, and surface adsorption energies, especially for organic crystals and organic/inorganic interfaces."
+    reason: "reason: data_unavailable
+explanation: This is a qualitative claim about the general performance of XDM.  The paper doesn't provide specific systems or data to reproduce quantitative comparisons."
+
+  - claim: "DFpT+U significantly improves the description of vibrational properties of strongly correlated systems compared to LDA/GGA."
+    reason: "reason: data_unavailable
+explanation: This is a general statement about the benefits of DFpT+U.  Reproducing specific improvements would require comparing DFpT+U and LDA/GGA calculations on specific materials, which are not provided in the paper."
+
+  - claim: "GWL allows reliable calculations for extended materials using small simulation cells (with cell edges of ~20 Bohr)."
+    reason: "reason: practical_limits
+explanation: The reliability and required cell size depend on the specific material and property being calculated. The paper doesn't provide specific examples or parameters for reproduction."
+
+  - claim: "QE-GIPAW allows calculations of chemical shifts in systems with several hundreds of atoms."
+    reason: "reason: practical_limits
+explanation: The feasibility of such calculations depends on the specific system and computational resources. The paper doesn't provide specific examples or input files for reproduction."
+
+  - claim: "The optimized tetrahedron method has better convergence properties than the linear tetrahedron method."
+    reason: "reason: practical_limits
+explanation: While generally true, the exact convergence behavior depends on the specific system and calculation. The paper doesn't provide specific examples or data for a direct comparison."
+

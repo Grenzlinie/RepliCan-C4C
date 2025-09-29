@@ -1,44 +1,47 @@
 username: "yicao-elina"
 paper_title: "Diffusion-Limited Crystal Growth of Gallium Nitride Using Active Machine Learning"
-paper_pdf: "https://pubs.acs.org/doi/pdf/10.1021/acs.cgd.3c01504?ref=article_openPDF"
-identifier: "https://doi.org/10.1021/acs.cgd.3c01504"
-code_url: "NOT_SPECIFIED"
-data_url: "NOT_SPECIFIED"
+paper_pdf: "https://pubs.acs.org/pdf/10.1021/acs.cgd.3c01601"
+identifier: "10.1021/acs.cgd.3c01601"
+code_url: ""
+data_url: ""
 
 claims:
-  - claim: "Initial growth velocity of GaN on c-plane was 3.37 m/s in a stoichiometric melt simulation, decaying to an average of 0.11 m/s over the last 1 ns of a 5 ns simulation."
+  - claim: "Nitrogen diffusion through Ga is slow, with diffusivity between 8.12e-8 and 1.47e-4 cm^2/s over a temperature range of 500-2000K."
     instruction:
-      - "1. Set up a "sandwich" simulation box as described in Figure 1a with a four-layer c-plane GaN substrate, vacuum regions, and a stoichiometric (50:50) mix of 2000 Ga and 2000 N atoms randomly placed in the vacuum"
-      - "Fix the central two layers of the substrate"
-      - "Run an NVT MD simulation at 2000 K for 5 ns using the FLARE force field within LAMMPS"
-      - "Calculate the growth velocity using eq 1 and eq 2.  The initial velocity should be around 3.37 m/s, decaying to an average of 0.11 m/s over the last 1 ns"
+      - "1. Equilibrate a Ga melt in NPT ensemble at 1 bar for 1 ns"
+      - "Introduce a single N atom into the equilibrated Ga melt"
+      - "Perform NVT MD simulations at various temperatures (500-2000 K) for 10 ns"
+      - "Track the mean squared displacement (MSD) of the N atom over time"
+      - "Calculate the diffusion coefficient using the Einstein relation: D = MSD/(6t), where t is time"
+      - "Expected result: Diffusivity values within the specified range depending on the temperature"
 
-  - claim: "The extrapolated growth velocity (Vinf) on the c-plane was 0.145 m/s in the stoichiometric melt simulation."
+  - claim: "Nitrogen tends to phase-segregate within liquid Ga."
     instruction:
-      - "1. Follow steps 1-4 from the previous claim"
-      - "Fit the growth velocity to an exponential decay function as defined in eq 3"
-      - "The fitted Vinf value should be approximately 0.145 m/s"
+      - "1. Set up a simulation box containing liquid Ga and N atoms (e.g., ratios of 2:1 or 3:1 Ga/N)"
+      - "Perform NVT MD simulations at elevated temperatures (e.g., 2200 K) for several nanoseconds (e.g., 5 ns)"
+      - "Visually inspect the simulation snapshots for evidence of N clustering or "bubble" formation"
+      - "Calculate the radial distribution function (RDF) for Ga-Ga and N-N pairs"
+      - "Observe an increase in Ga-Ga coordination number and a distinct N-N peak in the RDF, indicating phase separation"
 
-  - claim: "The diffusivity of a single nitrogen atom in a gallium melt was estimated to be between 8.12 × 10−8 and 1.47 × 10−4 cm²/s over a temperature range of 500-2000 K."
+  - claim: "Crystal growth velocity decays rapidly from initial values of ~3 m/s to ~0.1 m/s within the first nanosecond of simulation in a stoichiometric melt."
     instruction:
-      - "1. Equilibrate a gallium melt in an NPT ensemble at 1 bar for 1 ns"
-      - "Place a single nitrogen atom in the system"
-      - "Run NVT MD simulations at various temperatures between 500 K and 2000 K for 10 ns"
-      - "Calculate the diffusivity of nitrogen in the gallium melt for each temperature.  The values should fall within the range of 8.12 × 10−8 to 1.47 × 10−4 cm²/s"
+      - "1. Create a "sandwich" structure with a few layers of wurtzite GaN substrate, liquid Ga, and N atoms above and below the substrate in stoichiometric proportions"
+      - "Fix the central layers of the GaN substrate"
+      - "Perform NVT MD simulations at 2000 K for 5 ns"
+      - "Track the thickness of the crystallized GaN layer over time"
+      - "Calculate the growth velocity using the change in thickness over time"
+      - "Observe an initial rapid growth followed by a sharp decay in velocity within the first nanosecond"
 
-  - claim: "In diffusion-limited growth simulations, the extrapolated growth velocity (Vinf) was on the order of 10⁻⁴ m/s for a-, c-, and m-planes."
-    instruction:
-      - "1. Set up a non-periodic simulation box as shown in Figure 1b with the chosen plane (a-, c-, or m-) exposed"
-      - "Fill the vacuum region with Ga and N atoms at a 3:1 ratio"
-      - "Replenish nitrogen atoms above the liquid gallium every 200 ps with a minimum interatomic distance of 2 Å"
-      - "Run the simulation and analyze the growth rate"
-      - "Fit the growth velocity data to an exponential decay (eq 3) to determine Vinf. The value should be on the order of 10⁻⁴ m/s for each plane"
+non_reproducible_claims:
+  - claim: "Experimental growth velocity for GaN is 0.03-0.7 μm/min."
+    reason: "reason: non_computational
+explanation: This is an experimental measurement and cannot be directly reproduced through computation."
 
-  - claim: "The surface energies for a-, c-, and m-planes were calculated as 0.0631 eV/Å², 0.0581 eV/Å², and 0.0731 eV/Å² respectively."
-    instruction:
-      - "1. Create a slab of at least 20 layers of the desired plane (a-, c-, or m-)"
-      - "Add 10 Å of vacuum perpendicular to the plane"
-      - "Run a surface energy scan in LAMMPS at 0 K"
-      - "Calculate the surface energy using the formula σsurface = Esurface −N × EGa−N pair, where N is the total number of atoms divided by two"
-      - "The calculated values should be approximately 0.0631 eV/Å² for a-plane, 0.0581 eV/Å² for c-plane, and 0.0731 eV/Å² for m-plane"
+  - claim: "The m-plane has the highest growth velocity compared to the a- and c-planes in diffusion-limited growth."
+    reason: "reason: practical_limits
+explanation: While the paper mentions this observation, the difference in growth rates is small (~10%) and may be within the statistical uncertainty of the MD simulations.  Reproducing this claim requires extensive simulations and careful analysis of growth profiles, which is practically challenging."
+
+  - claim: "The m-plane exhibits the roughest surface growth while the a-plane has the smoothest."
+    reason: "reason: practical_limits
+explanation: Similar to the growth velocity claim, the differences in surface roughness may be subtle and require extensive simulations to definitively reproduce."
 

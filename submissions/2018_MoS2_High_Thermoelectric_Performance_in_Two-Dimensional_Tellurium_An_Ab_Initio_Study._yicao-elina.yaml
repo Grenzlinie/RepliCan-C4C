@@ -1,0 +1,60 @@
+username: "yicao-elina"
+paper_title: "High thermoelectric performance in two-dimensional tellurium: An ab initio study"
+paper_pdf: "https://arxiv.org/pdf/1906.00178v1.pdf"
+identifier: "1906.00178v1"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "Monolayer α-Te has a lattice constant of 4.238 Å."
+    instruction:
+      - "1. Construct α-Te monolayer structure.  The initial structure can be obtained from materials databases like Materials Project"
+      - "DFT setup in VASP:
+   - Exchange-correlation: PBE functional
+   - vdW correction: Grimme D2
+   - Energy cutoff: 500 eV
+   - K-points: 17x17x1 
+   - Convergence criteria: Energy 1e-6 eV, Force 1 meV/Å"
+      - "Relax atomic positions and cell volume"
+      - "Extract the optimized lattice constant from the output"
+      - "Expected result: 4.238 Å"
+
+  - claim: "α-Te has a near-direct band gap of 1.11 eV (HSE06 level)."
+    instruction:
+      - "1. Use the relaxed structure from the previous calculation"
+      - "DFT setup in VASP:
+   - Exchange-correlation: HSE06 functional
+   - vdW correction: Grimme D2
+   - Energy cutoff: 500 eV
+   - K-points: 17x17x1 (or denser for accurate band structure)
+   - Convergence criteria: Energy 1e-6 eV"
+      - "Perform a self-consistent field (SCF) calculation"
+      - "Calculate the band structure along high-symmetry paths"
+      - "Extract the band gap from the band structure"
+      - "Expected result: 1.11 eV"
+
+  - claim: "The intrinsic lattice thermal conductivity (κL) of α-Te is 9.85 W/mK at 300 K."
+    instruction:
+      - "1. Use the relaxed structure from the first calculation"
+      - "Calculate the harmonic force constants using Phonopy"
+      - "Calculate the anharmonic force constants using a finite displacement approach (details not fully provided in the paper, requires further investigation)"
+      - "Calculate κL using ShengBTE with the iterative method"
+      - "Expected result: 9.85 W/mK at 300 K"
+
+  - claim: "A maximum ZT value of 0.83 is achieved under reasonable hole concentration at 700 K for α-Te."
+    instruction:
+      - "1. Calculate the electronic transport properties (Seebeck coefficient, electrical conductivity) using Boltzmann transport theory as implemented in BoltzTraP or similar codes.  The relaxation time is calculated based on deformation potential theory, as described in the paper and supporting information.  Details on the deformation potential calculations are not fully provided and would require further investigation"
+      - "Use the calculated κL from the previous claim"
+      - "Calculate ZT = S^2 * σ * T / (κe + κL) for various hole concentrations at 700 K"
+      - "Find the maximum ZT value"
+      - "Expected result: 0.83"
+
+non_reproducible_claims:
+  - claim: "Tellurene can be fabricated into air-stable and high-performance field-effect transistors."
+    reason: "reason: non_computational
+explanation: Requires experimental device fabrication and characterization."
+
+  - claim: "Tellurene has much larger carrier mobility than that of 2D MoS2."
+    reason: "reason: data_unavailable
+explanation: While carrier mobility is calculated, the comparison to MoS2 relies on external references and is not directly calculated in this work."
+

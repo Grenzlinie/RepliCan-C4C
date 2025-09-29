@@ -1,0 +1,45 @@
+username: "yicao-elina"
+paper_title: "High-specific-power flexible transition metal dichalcogenide solar cells"
+paper_pdf: "Unknown Journal Link"
+identifier: "Unknown"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "Flexible WSe2 solar cells achieve a PCE of 5.1%"
+    instruction:
+      - "This claim is based on experimental fabrication and characterization, not directly from DFT calculations.  Therefore, it cannot be reproduced solely through computation. The paper describes the fabrication process involving exfoliated WSe2, graphene contacts, MoOx capping, and gold contacts on a polyimide substrate.  The PCE is derived from J-V measurements under AM 1.5G illumination.  Reproducing this claim requires experimental fabrication and characterization as described in the "Methods" section of the paper"
+
+  - claim: "WSe2 solar cells achieve a specific power of 4.4 W g−1"
+    instruction:
+      - "Similar to the PCE claim, this is derived from experimental measurements and device weight calculations (detailed in Supplementary Note 3 and Table 2).  It cannot be directly reproduced through DFT.  The specific power is calculated based on the measured PCE and the weight of the device components, including the substrate"
+
+  - claim: "MoOx acts as an anti-reflection coating for WSe2"
+    instruction:
+      - "While the paper uses optical simulations (transfer matrix method) to support this claim, it could potentially be investigated using DFT calculations. However, the paper doesn't provide specific parameters or instructions for such DFT calculations.  The optical simulation details are mentioned briefly in the "Methods" section and Supplementary Information, but not enough to provide reproducible instructions here"
+
+non_reproducible_claims:
+  - claim: "Raman spectroscopy confirms N incorporation"
+    reason: "reason: not_applicable
+explanation: This paper does not mention nitrogen incorporation."
+
+  - claim: "Device mobility increases by 20%"
+    reason: "reason: not_applicable
+explanation: This paper does not discuss device mobility."
+
+  - claim: "Bending the device to a radius of 4mm does not change the J-V characteristics."
+    reason: "reason: non_computational
+explanation: This claim is based on experimental measurements of the device under bending. It cannot be reproduced computationally."
+
+  - claim: "Shunt resistance decreases linearly with increasing incident intensity."
+    reason: "reason: non_computational
+explanation: This claim is based on analysis of experimental J-V curves at different light intensities. It's not a direct output of DFT calculations."
+
+  - claim: "WSe2 solar cells demonstrate a near-unity ideality factor of n = 1.18 and dark saturation current of Jo = 3.49 nA cm−2."
+    reason: "reason: non_computational
+explanation: These values are extracted from fitting experimental J-V data, not calculated from first principles."
+
+  - claim: "The average IQE is 0.87"
+    reason: "reason: non_computational
+explanation: This is derived by comparing measured JSC with a JSC calculated from absorption measurements, not directly from DFT."
+

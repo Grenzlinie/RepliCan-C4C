@@ -1,0 +1,40 @@
+username: "yicao-elina"
+paper_title: "Density functional theory calculations of XPS binding energy shift for nitrogen-containing graphene-like structures"
+paper_pdf: "https://pubs.rsc.org/en/content/articlepdf/2013/cc/c3cc39131a"
+identifier: "c3cc39131a"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "The binding energy (BE) shift for nitrogen bound to a metal (Co) in a graphene-like structure is approximately 1 eV with respect to pyridinic nitrogen."
+    instruction:
+      - "1. Structure setup:
+   - Create a 32-atom graphene supercell (dimensions not explicitly stated, but likely a 4x4 or similar size).
+   - Introduce N and Co atoms as substitutional defects, replacing C atoms.  Three different Co-N bonding environments are considered (Me-N4, Me-N2 (1), Me-N2 (2)) as shown in Figure 2 of the paper"
+      - "DFT Calculation Setup (VASP):
+   - Functional: GGA (specific functional not mentioned, likely PBE)
+   - Pseudopotentials: PAW (Projector Augmented Wave)
+   - K-points: Up to 12x12x1 (converged k-point grid)
+   - Energy cutoffs: Not specified.
+   - Dipole correction: Applied perpendicular to the graphene sheet.
+   - Vacuum layer: 14 Å"
+      - "Calculation:
+   - Calculate the N 1s core-level binding energy for each structure (pristine graphene with pyridinic N, and the three Co-N structures) using the final state approximation.
+   - BE = BE(N 1s) - EF, where EF is the Fermi energy"
+      - "Post-processing:
+   - Calculate the BE shift as the difference between the BE of N in the Co-N structures and the BE of pyridinic N in pristine graphene"
+      - "Expected result: BE shifts of approximately +1.1 eV, +0.8 eV, and +1.0 eV for the three Co-N structures, respectively, relative to pyridinic N.  The average experimental BE shift is reported as +0.9 to +1.1 eV"
+
+non_reproducible_claims:
+  - claim: "The ratio of Co–N4/Co–N2 changes from 0.5 under vacuum to 2 in the presence of O2/H2O."
+    reason: "reason: data_unavailable
+explanation: The specific details of the ambient pressure XPS experiment (pressure, temperature, exposure time, etc.) are not provided, making it difficult to reproduce the exact experimental conditions. Additionally, the precise curve-fitting procedure used to determine the Co-N4/Co-N2 ratio is not fully described."
+
+  - claim: "Co–N4 centers are energetically more favorable for binding of oxygen than Co–N2 centers."
+    reason: "reason: non_computational
+explanation: This claim is based on a reference to another study (reference 30), which is not analyzed here.  It's not clear from this paper alone how this claim was computationally validated."
+
+  - claim: "Raman spectroscopy confirms N incorporation"
+    reason: "reason: non_computational
+explanation: Requires experimental Raman measurements"
+

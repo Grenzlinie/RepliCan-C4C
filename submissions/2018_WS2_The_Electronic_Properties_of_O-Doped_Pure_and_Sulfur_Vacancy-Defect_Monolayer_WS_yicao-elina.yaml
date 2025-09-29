@@ -1,0 +1,45 @@
+username: "yicao-elina"
+paper_title: "The Electronic Properties of O-Doped Pure and Sulfur Vacancy-Defect Monolayer WS2: A First-Principles Study"
+paper_pdf: "https://www.mdpi.com/1996-1944/11/2/218/pdf"
+identifier: "10.3390/ma11020218"
+code_url: ""
+data_url: ""
+
+claims:
+  - claim: "The band gap of O-doped pure WS2 (2x2x1 supercell, 12.5% O doping) is reduced by 8.9% displaying an indirect band gap."
+    instruction:
+      - "1. Create a 2x2x1 supercell of monolayer WS2"
+      - "Substitute one S atom with an O atom (12.5% doping concentration)"
+      - "DFT setup in VASP:
+   - Exchange-correlation: PBE functional
+   - Pseudopotentials: PAW
+   - K-points: 5x5x1 Monkhorst-Pack grid
+   - Energy cutoff: 500 eV
+   - Vacuum layer: 20 Å"
+      - "Relax atomic positions until forces < 0.01 eV/Å and total energy change < 10^-6 eV"
+      - "Calculate the band structure"
+      - "Expected result: Indirect band gap reduced by approximately 8.9% compared to pristine WS2 (around 2.0 eV).  The exact value is not provided in the paper and requires calculating the pristine WS2 band gap with the same settings"
+
+  - claim: "The band gaps in 3 × 3 × 1 and 4 × 4 × 1 supercells are both opened to some extent, respectively, for 5.55% and 3.13% O doping concentrations."
+    instruction:
+      - "1. Create 3x3x1 and 4x4x1 supercells of monolayer WS2"
+      - "Substitute one S atom with an O atom in each supercell (5.55% and 3.13% doping, respectively)"
+      - "Use the same DFT setup as in the previous claim (PBE, PAW, 5x5x1 k-points, 500 eV cutoff, 20 Å vacuum)"
+      - "Relax atomic positions until forces < 0.01 eV/Å and total energy change < 10^-6 eV"
+      - "Calculate the band structure for each supercell"
+      - "Expected result: Band gaps slightly larger than pristine WS2. The exact values are not provided and require comparison with a pristine WS2 calculation"
+
+  - claim: "The lattice parameter of O-doped WS2 is a = b = 3.132 Å which is smaller than that of pure WS2."
+    instruction:
+      - "1. Create a 2x2x1 supercell of monolayer WS2"
+      - "Substitute one S atom with an O atom"
+      - "Use the same DFT setup as in the first claim"
+      - "Relax atomic positions until forces < 0.01 eV/Å and total energy change < 10^-6 eV"
+      - "Extract the lattice parameters a and b"
+      - "Expected result: a = b = 3.132 Å"
+
+non_reproducible_claims:
+  - claim: "O doping can still be regarded as a potential method to slightly tune the electronic properties of monolayer WS2."
+    reason: "reason: non_computational
+explanation: This is a qualitative assessment and not a specific quantitative claim that can be directly reproduced computationally."
+
