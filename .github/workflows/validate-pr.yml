@@ -45,18 +45,23 @@ jobs:
       run: |
         # Exit code tracking
         exit_code=0
-        
+
+        # Store the changed files in an array, properly handling special characters
+        IFS=$'\n'
+        changed_files=(${{ steps.changed-files.outputs.all_changed_files }})
+        unset IFS
+
         # Check if any submission files were added/modified
-        if [ -z "${{ steps.changed-files.outputs.all_changed_files }}" ]; then
+        if [ ${#changed_files[@]} -eq 0 ]; then
           echo "❌ No submission files found in this PR"
           echo "Please add your submission file to the 'submissions/' directory"
           exit 1
         fi
-        
+
         # Validate each changed file
-        for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+        for file in "${changed_files[@]}"; do
           echo "Validating: $file"
-          
+
           # Run validation script
           if python scripts/validate_submission.py "$file"; then
             echo "✅ $file passed validation"
@@ -64,21 +69,21 @@ jobs:
             echo "❌ $file failed validation"
             exit_code=1
           fi
-          
+
           echo "---"
         done
-        
-        # Check file naming convention
-        for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+
+        # Check file naming convention (relaxed to allow parentheses)
+        for file in "${changed_files[@]}"; do
           filename=$(basename "$file")
-          # Ensure filename doesn't contain spaces or special characters
-          if [[ ! "$filename" =~ ^[a-zA-Z0-9_.-]+\.(json|yaml|yml)$ ]]; then
+          # Allow parentheses, letters, numbers, underscores, hyphens, and dots
+          if [[ ! "$filename" =~ ^[a-zA-Z0-9_().-]+\.(json|yaml|yml)$ ]]; then
             echo "❌ Invalid filename: $filename"
-            echo "Filenames must only contain letters, numbers, underscores, hyphens, and dots"
+            echo "Filenames must only contain letters, numbers, underscores, hyphens, parentheses, and dots"
             exit_code=1
           fi
         done
-        
+
         exit $exit_code
     
     - name: Comment PR
@@ -90,7 +95,7 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: '❌ Validation failed! Please check the workflow logs for details.\n\nMake sure your submission:\n- Is placed in the `submissions/` directory\n- Is a valid JSON or YAML file\n- Contains all required fields: `username`, `paper_title`, `paper_pdf`, `identifier`, `code_url`, `claims`\n- Has at least one claim with instructions\n- Has a valid filename (letters, numbers, underscores, hyphens only)'
+            body: '❌ Validation failed! Please check the workflow logs for details.\n\nMake sure your submission:\n- Is placed in the `submissions/` directory\n- Is a valid JSON or YAML file\n- Contains all required fields: `username`, `paper_title`, `paper_pdf`, `identifier`, `code_url`, `claims`\n- Has at least one claim with instructions\n- Has a valid filename (letters, numbers, underscores, hyphens, parentheses, and dots only)'
           })
     
     - name: Comment PR Success
