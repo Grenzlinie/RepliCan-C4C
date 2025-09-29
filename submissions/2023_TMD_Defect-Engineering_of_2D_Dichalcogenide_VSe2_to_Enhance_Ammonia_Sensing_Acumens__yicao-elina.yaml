@@ -4,7 +4,7 @@ paper_title: 'Defect-Engineering of 2D Dichalcogenide VSe2 to Enhance Ammonia Se
 paper_pdf: https://www.mdpi.com/2079-6374/13/2/257/pdf
 identifier: 10.3390/bios13020257
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: The introduction of Se vacancy to pristine VSe2 was found to cause about

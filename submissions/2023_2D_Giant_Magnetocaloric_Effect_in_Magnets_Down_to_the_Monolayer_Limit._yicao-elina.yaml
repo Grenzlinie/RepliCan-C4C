@@ -3,7 +3,7 @@ paper_title: Giant Magnetocaloric Effect in Magnets Down to the Monolayer Limit
 paper_pdf: https://arxiv.org/pdf/2303.15722v1.pdf
 identifier: '2303.15722'
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: Nitrogen substitution at sulfur site has formation energy of 2.34 eV in monolayer

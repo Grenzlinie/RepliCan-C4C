@@ -4,7 +4,7 @@ paper_title: 'First-principles Calculations of MoSeTe/WSeTe Bilayers: Stability,
 paper_pdf: https://arxiv.org/pdf/2307.11839.pdf
 identifier: '2307.11839'
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: The 2H phases of MoSeTe and WSeTe are 76 meV and 380 meV per unit cell less

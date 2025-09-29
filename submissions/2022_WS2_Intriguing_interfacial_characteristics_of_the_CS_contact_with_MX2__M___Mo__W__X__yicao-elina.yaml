@@ -4,7 +4,7 @@ paper_title: Intriguing interfacial characteristics of the CS contact with MX2 (
 paper_pdf: No ArXiv link found. Provide journal link if available.
 identifier: No DOI or ArXiv ID found. Provide if available.
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: Binding energy of CS-MoS2 in stacking (b) is -0.50 eV.

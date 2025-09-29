@@ -3,7 +3,7 @@ paper_title: Spin-valley locking for in-gap quantum dots in a MoS2 transistor
 paper_pdf: https://arxiv.org/pdf/2306.13542v1.pdf
 identifier: '2306.13542'
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: '7L MoS2: CB minima at Q-points, K-points mixing 137 meV above (DFT calculations)'

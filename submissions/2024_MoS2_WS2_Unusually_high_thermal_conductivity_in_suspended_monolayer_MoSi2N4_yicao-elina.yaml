@@ -3,7 +3,7 @@ paper_title: Unusually high thermal conductivity in suspended monolayer MoSi2N4
 paper_pdf: https://www.nature.com/articles/s41467-024-41278-4
 identifier: s41467-024-41278-4
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: Monolayer MoSi2N4 has a Debye temperature of 436.45 K.

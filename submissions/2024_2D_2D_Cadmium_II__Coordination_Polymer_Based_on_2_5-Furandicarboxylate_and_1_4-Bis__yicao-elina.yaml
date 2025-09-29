@@ -5,7 +5,7 @@ paper_title: '2D Cadmium(II) Coordination Polymer Based on 2,5‑Furandicarboxyl
 paper_pdf: https://doi.org/10.1007/s10904-024-03083-7
 identifier: 10.1007/s10904-024-03083-7
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: The complex emits a maximum at 509 nm.

@@ -4,7 +4,7 @@ paper_title: Conducting Polymers Blended Conjugated Host and Unconjugated Dopant
 paper_pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/anie.202219313
 identifier: 10.1002/anie.202219313
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: PDPIN has a LUMO of -4.26 eV and a HOMO of -5.55 eV.

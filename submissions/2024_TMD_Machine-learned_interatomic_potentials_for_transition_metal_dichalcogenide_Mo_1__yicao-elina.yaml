@@ -4,7 +4,7 @@ paper_title: Machine-learned interatomic potentials for transition metal dichalc
 paper_pdf: MISSING
 identifier: MISSING
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: The Mean Absolute Error (MAE) and the Maximum Absolute Error (MAX) calculated

@@ -3,7 +3,7 @@ paper_title: Low-energy pathways lead to self-healing defects in CsPbBr3
 paper_pdf: https://doi.org/10.1039/d5cp01641j
 identifier: 10.1039/d5cp01641j
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: The relaxed cell parameters for the pristine CsPbBr3 supercell (3 × 3 × 2)

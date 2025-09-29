@@ -4,7 +4,7 @@ paper_title: Transferable Force Field for Gallium Nitride Crystal Growth from th
 paper_pdf: https://pubs.acs.org/doi/10.1021/acs.jctc.3c00531
 identifier: 10.1021/acs.jctc.3c00531
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: Melting temperature of gallium is estimated to be 308 K.

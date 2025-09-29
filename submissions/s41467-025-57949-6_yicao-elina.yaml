@@ -4,7 +4,7 @@ paper_title: Rational design of optimal bimetallic and trimetallic nickel-based 
 paper_pdf: https://doi.org/10.1038/s41467-025-57949-6
 identifier: https://doi.org/10.1038/s41467-025-57949-6
 claim_type: custom_code
-code_url: NOT_SPECIFIED
+code_url: http://www.quantum-espresso.org/download
 data_url: NOT_SPECIFIED
 claims:
 - claim: Pd-Ni catalyst provokes the utmost H2 activity

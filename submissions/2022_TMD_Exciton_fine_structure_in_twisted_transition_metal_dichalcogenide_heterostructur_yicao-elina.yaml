@@ -3,7 +3,7 @@ paper_title: Exciton fine structure in twisted transition metal dichalcogenide h
 paper_pdf: https://www.nature.com/articles/s41524-023-01046-5
 identifier: s41524-023-01046-5
 claim_type: custom_code
-code_url: ''
+code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
 - claim: GW interlayer bandgap is 1.74 eV
