@@ -377,7 +377,8 @@ function generateOutput(format) {
             yaml += `paper_title: "${data.paper_title}"\n`;
             yaml += `paper_pdf: "${data.paper_pdf}"\n`;
             yaml += `identifier: "${data.identifier}"\n`;
-            
+            yaml += `claim_type: "${data.claim_type}"\n`;
+
             if (data.code_url) {
                 yaml += `code_url: "${data.code_url}"\n`;
             }
