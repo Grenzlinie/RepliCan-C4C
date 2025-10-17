@@ -3,7 +3,7 @@ paper_title: 'First-principles Calculations of MoSeTe/WSeTe Bilayers: Stability,
   Electronic Band Offsets, and Rashba Splitting'
 paper_pdf: https://arxiv.org/pdf/2307.11839.pdf
 identifier: '2307.11839'
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

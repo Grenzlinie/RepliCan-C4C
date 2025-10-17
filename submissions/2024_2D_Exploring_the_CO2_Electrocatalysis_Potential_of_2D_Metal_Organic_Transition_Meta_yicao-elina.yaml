@@ -3,7 +3,7 @@ paper_title: 'Exploring the CO2 Electrocatalysis Potential of 2D Metal–Organic
   Metal–Hexahydroxytriquinoline Frameworks: A DFT Investigation'
 paper_pdf: https://doi.org/10.3390/molecules29122896
 identifier: 10.3390/molecules29122896
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: https://www.mdpi.com/article/10.3390/molecules29122896/s1
 claims:

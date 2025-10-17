@@ -3,7 +3,7 @@ paper_title: Theoretical Investigation on Molecular Structure and Electronic Pro
   of BxLiy Cluster for Lithium-Ion Batteries with Quantum ESPRESSO Program
 paper_pdf: molecules-25-03266.pdf
 identifier: molecules-25-03266
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

@@ -2,7 +2,7 @@ username: yicao-elina
 paper_title: Adsorption of water on vacancy defected h-BN bilayer at B and N sites
 paper_pdf: http://nepjol.info/index.php/BIBECHANA/article/view/49040
 identifier: ISSN 2091-0762 (Print), 2382-5340 (Online)
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

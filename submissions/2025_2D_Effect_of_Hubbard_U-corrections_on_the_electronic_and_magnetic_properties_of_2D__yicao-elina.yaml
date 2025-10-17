@@ -3,7 +3,7 @@ paper_title: 'Effect of Hubbard U-corrections on the electronic and magnetic pro
   of 2D materials: a high-throughput study'
 paper_pdf: https://www.nature.com/articles/s41524-024-01305-3
 identifier: s41524-024-01305-3
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

@@ -3,7 +3,7 @@ paper_title: Tunable electronic structure and magnetic anisotropy in bilayer fer
   semiconductor Cr2Ge2Te6
 paper_pdf: https://www.nature.com/articles/s41598-021-82744-0
 identifier: s41598-021-82744-0
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

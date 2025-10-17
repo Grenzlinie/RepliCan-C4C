@@ -3,7 +3,7 @@ paper_title: Transferable Force Field for Gallium Nitride Crystal Growth from th
   Melt Using On-The-Fly Active Learning
 paper_pdf: https://pubs.acs.org/doi/10.1021/acs.jctc.3c00531
 identifier: 10.1021/acs.jctc.3c00531
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

@@ -3,7 +3,7 @@ paper_title: 'Non-volatile resistive switching mechanism in single-layer MoS2 me
   insights from ab initio modelling of Au and MoS2 interfaces'
 paper_pdf: https://pubs.rsc.org/en/content/articlelookup/2023/na/d3na00037a
 identifier: d3na00037a
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

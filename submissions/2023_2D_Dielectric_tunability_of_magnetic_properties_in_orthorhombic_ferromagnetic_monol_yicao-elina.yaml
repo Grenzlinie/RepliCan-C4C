@@ -3,7 +3,7 @@ paper_title: Dielectric tunability of magnetic properties in orthorhombic ferrom
   monolayer CrSBr
 paper_pdf: https://www.nature.com/articles/s41524-023-01010-5
 identifier: s41524-023-01010-5
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

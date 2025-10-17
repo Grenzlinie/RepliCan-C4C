@@ -3,7 +3,7 @@ paper_title: 'A comprehensive picture of roughness evolution in organic crystall
   growth: the role of molecular aspect ratio'
 paper_pdf: https://pubs.rsc.org/en/content/articlepdf/2022/mh/d2mh00854h
 identifier: https://doi.org/10.1039/d2mh00854h
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: NOT_SPECIFIED
 claims:

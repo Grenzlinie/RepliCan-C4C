@@ -3,7 +3,7 @@ paper_title: 'Ferromagnetism in Defected TMD (MoX2, X = S, Se) Monolayer and Its
   under O2, O3, and H2O Gas Exposure: DFT Study'
 paper_pdf: https://doi.org/10.3390/nano13101642
 identifier: 10.3390/nano13101642
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

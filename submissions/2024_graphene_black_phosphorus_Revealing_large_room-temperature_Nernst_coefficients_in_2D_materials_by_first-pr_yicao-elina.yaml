@@ -2,7 +2,7 @@ username: yicao-elina
 paper_title: Tuning Nernst coefficients in 2D materials by first-principles modeling
 paper_pdf: https://doi.org/10.1039/d3nr06127b
 identifier: 10.1039/d3nr06127b
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

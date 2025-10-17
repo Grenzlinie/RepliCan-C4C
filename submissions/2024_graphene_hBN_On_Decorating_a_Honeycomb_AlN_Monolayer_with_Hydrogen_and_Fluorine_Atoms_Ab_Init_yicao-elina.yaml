@@ -3,7 +3,7 @@ paper_title: 'On Decorating a Honeycomb AlN Monolayer with Hydrogen and Fluorine
   Ab Initio and Experimental Aspects'
 paper_pdf: https://doi.org/10.3390/ma17030616
 identifier: 10.3390/ma17030616
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

@@ -3,7 +3,7 @@ paper_title: Intriguing interfacial characteristics of the CS contact with MX2 (
   = Mo, W; X = S, Se, Te) and MXY ((X ≠ Y) = S, Se, Te) monolayers
 paper_pdf: No ArXiv link found. Provide journal link if available.
 identifier: No DOI or ArXiv ID found. Provide if available.
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

@@ -3,7 +3,7 @@ paper_title: 'CO and HCHO Sensing by Single Au Atom-Decorated WS2 Monolayer for 
   of Thermal Aging Faults in the Dry-Type Reactor: A First-Principles Study'
 paper_pdf: https://doi.org/10.3390/ma17051173
 identifier: 10.3390/ma17051173
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:

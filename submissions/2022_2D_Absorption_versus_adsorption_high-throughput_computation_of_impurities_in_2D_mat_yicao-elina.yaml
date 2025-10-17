@@ -3,7 +3,7 @@ paper_title: 'Absorption versus adsorption: high-throughput computation of impur
   in 2D materials'
 paper_pdf: https://www.nature.com/articles/s41699-023-00420-4.pdf
 identifier: s41699-023-00420-4
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: https://doi.org/10.5281/zenodo.7850007
 claims:

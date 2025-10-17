@@ -3,7 +3,7 @@ paper_title: 'First-Principles Study of MoS2, WS2, and NbS2 Quantum Dots: Electr
   Properties and Hydrogen Evolution Reaction'
 paper_pdf: https://www.mdpi.com/2073-4352/13/7/994/pdf
 identifier: 10.3390/cryst13070994
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
 claims:
