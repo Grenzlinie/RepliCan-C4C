@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: The Contact Properties of Monolayer and Multilayer MoS2-Metal van der
   Waals Interfaces
-paper_pdf: https://www.mdpi.com/2075-4701/14/13/1075/pdf
-identifier: 10.3390/nano14131075
+paper_pdf: https://www.mdpi.com/2079-4991/14/13/1075/pdf?version=1719212130
+identifier: https://doi.org/10.3390/nano14131075
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

@@ -2,7 +2,7 @@ username: yicao-elina
 paper_title: 'Defect-Engineering of 2D Dichalcogenide VSe2 to Enhance Ammonia Sensing:
   Acumens from DFT Calculations'
 paper_pdf: https://www.mdpi.com/2079-6374/13/2/257/pdf
-identifier: 10.3390/bios13020257
+identifier: https://doi.org/10.3390/
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

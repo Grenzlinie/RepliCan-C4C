@@ -2,8 +2,8 @@ username: yicao-elina
 paper_title: '2D Cadmium(II) Coordination Polymer Based on 2,5‑Furandicarboxylate
   and 1,4‑Bis(1H‑imidazol‑1‑yl)butane Linkers: Synthesis, Characterization and DFT
   Studies'
-paper_pdf: https://doi.org/10.1007/s10904-024-03083-7
-identifier: 10.1007/s10904-024-03083-7
+paper_pdf: https://link.springer.com/content/pdf/10.1007/s10904-024-03083-7.pdf
+identifier: https://doi.org/10.1007/s10904-024-03083-7
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

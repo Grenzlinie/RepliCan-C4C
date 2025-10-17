@@ -1,7 +1,7 @@
 username: yicao-elina
 paper_title: Giant Magnetocaloric Effect in Magnets Down to the Monolayer Limit
-paper_pdf: https://arxiv.org/pdf/2303.15722v1.pdf
-identifier: '2303.15722'
+paper_pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/smll.202300333
+identifier: https://doi.org/10.1002/smll.202300333
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

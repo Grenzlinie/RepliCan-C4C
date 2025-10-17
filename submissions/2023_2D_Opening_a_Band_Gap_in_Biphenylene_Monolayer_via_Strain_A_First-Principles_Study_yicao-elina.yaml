@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: 'Opening a Band Gap in Biphenylene Monolayer via Strain: A First-Principles
   Study'
-paper_pdf: https://doi.org/10.3390/molecules28104178
-identifier: 10.3390/molecules28104178
+paper_pdf: https://www.mdpi.com/1420-3049/28/10/4178/pdf?version=1684463126
+identifier: https://doi.org/10.3390/molecules28104178
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: 'Stability, Energetic, and Reactivity Properties of NiPd Alloy Clusters
   Deposited on Graphene with Defects: A Density Functional Theory Study'
-paper_pdf: https://doi.org/10.3390/ma15134710
-identifier: 10.3390/ma15134710
+paper_pdf: https://www.mdpi.com/1996-1944/15/13/4710/pdf?version=1657018450
+identifier: https://doi.org/10.3390/ma15134710
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

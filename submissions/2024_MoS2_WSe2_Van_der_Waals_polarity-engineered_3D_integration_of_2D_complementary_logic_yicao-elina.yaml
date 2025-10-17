@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: Van der Waals polarity-engineered 3D integration of 2D complementary
   logic
-paper_pdf: https://www.nature.com/articles/s41563-024-02126-1
-identifier: s41563-024-02126-1
+paper_pdf: https://www.nature.com/articles/s41586-024-07438-5.pdf
+identifier: https://doi.org/10.1038/s41586-024-07438-5
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

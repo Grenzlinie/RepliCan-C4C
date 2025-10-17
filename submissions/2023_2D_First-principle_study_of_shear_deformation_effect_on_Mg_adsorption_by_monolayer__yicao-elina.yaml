@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: First-principles study of shear deformation on Mg adsorption by monolayer
   SnS2
-paper_pdf: Unknown Journal Link
-identifier: Unknown
+paper_pdf: https://link.springer.com/content/pdf/10.1007/s00894-023-05796-x.pdf
+identifier: https://doi.org/10.1007/s00894-023-05796-x
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

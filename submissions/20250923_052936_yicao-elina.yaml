@@ -3,6 +3,7 @@ paper_title: Preferred Interfacial Alignment in the Pd@HKUST1 System and the Rol
   the MOF to Affect Charge Transfer to Pd Nanoparticles
 paper_pdf: https://pubs.acs.org/doi/pdf/10.1021/acs.jpcc.2c00021?ref=article_openPDF
 identifier: https://doi.org/10.1021/acs.jpcc.2c00021
+claim_type: "pip_libraries"
 claims:
 - claim: The 100A and 111A facets interact the strongest with Pd, with binding energies
     of up to -0.36 kcal/mol/Å².

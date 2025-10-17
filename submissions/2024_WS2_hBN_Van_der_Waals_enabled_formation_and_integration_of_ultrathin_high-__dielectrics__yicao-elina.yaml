@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: Van der Waals enabled formation and integration of ultrathin high-κ dielectrics
   on 2D semiconductors
-paper_pdf: https://www.nature.com/articles/s41699-023-00430-4
-identifier: s41699-023-00430-4
+paper_pdf: https://www.nature.com/articles/s41699-024-00443-2.pdf
+identifier: https://doi.org/10.1038/s41699-024-00443-2
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

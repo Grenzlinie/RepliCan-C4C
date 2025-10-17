@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: Influence of Al-O and Al-C Clusters on Defects in Graphene Nanosheets
   Derived from Coal-Tar Pitch via Al4C3 Precursor
-paper_pdf: https://doi.org/10.3390/ma15207312
-identifier: 10.3390/ma15207312
+paper_pdf: https://www.mdpi.com/1996-1944/15/20/7312/pdf?version=1666175270
+identifier: https://doi.org/10.3390/ma15207312
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

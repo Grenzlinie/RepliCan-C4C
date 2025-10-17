@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: 'First-principles Calculations of MoSeTe/WSeTe Bilayers: Stability, Phonons,
   Electronic Band Offsets, and Rashba Splitting'
-paper_pdf: https://arxiv.org/pdf/2307.11839.pdf
-identifier: '2307.11839'
+paper_pdf: https://journals.aps.org/prb/pdf/10.1103/PhysRevB.109.085425
+identifier: https://doi.org/10.1103/PhysRevB.109.085425
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

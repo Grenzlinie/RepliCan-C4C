@@ -1,7 +1,7 @@
 username: yicao-elina
 paper_title: Strain Engineering of Intrinsic Ferromagnetism in 2D van der Waals Materials
 paper_pdf: https://www.mdpi.com/2079-4991/13/16/2378/pdf
-identifier: 10.3390/nano13162378
+identifier: https://doi.org/10.3390/nano13162378
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

@@ -1,7 +1,7 @@
 username: yicao-elina
 paper_title: Real-time GW-Ehrenfest-Fan-Migdal method for nonequilibrium 2D materials
-paper_pdf: https://arxiv.org/pdf/2305.07458.pdf
-identifier: '2305.07458'
+paper_pdf: https://pubs.acs.org/doi/pdf/10.1021/acs.nanolett.3c01772?ref=article_openPDF
+identifier: https://doi.org/10.1021/acs.nanolett.3c01772
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

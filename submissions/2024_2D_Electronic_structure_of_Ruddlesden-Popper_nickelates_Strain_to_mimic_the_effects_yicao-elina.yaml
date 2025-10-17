@@ -2,7 +2,7 @@ username: yicao-elina
 paper_title: 'Electronic structure of Ruddlesden-Popper nickelates: Strain to mimic
   the effects pressure'
 paper_pdf: https://arxiv.org/pdf/2412.04391v4.pdf
-identifier: 2412.04391v4
+identifier: https://doi.org/10.1103/PhysRevB.111.115154
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
