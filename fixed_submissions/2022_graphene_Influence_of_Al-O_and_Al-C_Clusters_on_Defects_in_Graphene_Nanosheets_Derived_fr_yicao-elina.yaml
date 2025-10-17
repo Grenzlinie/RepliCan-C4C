@@ -3,7 +3,7 @@ paper_title: Influence of Al-O and Al-C Clusters on Defects in Graphene Nanoshee
   Derived from Coal-Tar Pitch via Al4C3 Precursor
 paper_pdf: https://doi.org/10.3390/ma15207312
 identifier: 10.3390/ma15207312
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

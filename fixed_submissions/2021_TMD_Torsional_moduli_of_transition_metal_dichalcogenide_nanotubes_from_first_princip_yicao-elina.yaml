@@ -3,7 +3,7 @@ paper_title: Torsional moduli of transition metal dichalcogenide nanotubes from 
   principles
 paper_pdf: https://arxiv.org/pdf/2103.08750.pdf
 identifier: '2103.08750'
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

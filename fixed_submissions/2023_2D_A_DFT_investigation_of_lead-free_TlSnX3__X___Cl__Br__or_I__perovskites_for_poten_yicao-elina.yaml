@@ -3,7 +3,7 @@ paper_title: A DFT investigation of lead-free TlSnX3 (X = Cl, Br, or I) perovski
   for potential applications in solar cells and thermoelectric devices
 paper_pdf: https://pubs.rsc.org/en/content/articlepdf/2023/ra/d3ra06848a
 identifier: d3ra06848a
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

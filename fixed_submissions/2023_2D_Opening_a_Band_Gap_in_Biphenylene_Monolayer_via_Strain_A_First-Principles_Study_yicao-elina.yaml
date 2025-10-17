@@ -3,7 +3,7 @@ paper_title: 'Opening a Band Gap in Biphenylene Monolayer via Strain: A First-Pr
   Study'
 paper_pdf: https://doi.org/10.3390/molecules28104178
 identifier: 10.3390/molecules28104178
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

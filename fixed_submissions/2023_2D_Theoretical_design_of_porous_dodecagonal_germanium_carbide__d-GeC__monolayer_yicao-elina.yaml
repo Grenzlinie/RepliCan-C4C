@@ -2,7 +2,7 @@ username: yicao-elina
 paper_title: Theoretical design of porous dodecagonal germanium carbide (d-GeC) monolayer
 paper_pdf: https://pubs.rsc.org/en/content/articlepdf/2023/ra/d2ra07982a
 identifier: d2ra07982a
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

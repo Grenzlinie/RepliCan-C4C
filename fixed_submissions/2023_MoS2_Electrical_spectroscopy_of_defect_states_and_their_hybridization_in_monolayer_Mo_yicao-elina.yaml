@@ -3,7 +3,7 @@ paper_title: Electrical spectroscopy of defect states and their hybridization in
   MoS2
 paper_pdf: https://www.nature.com/articles/s41467-022-35624-w
 identifier: s41467-022-35624-w
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

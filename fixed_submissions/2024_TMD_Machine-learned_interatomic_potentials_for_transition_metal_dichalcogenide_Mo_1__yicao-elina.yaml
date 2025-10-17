@@ -3,7 +3,7 @@ paper_title: Machine-learned interatomic potentials for transition metal dichalc
   Mo1−xWxS2−2ySe2y alloys
 paper_pdf: MISSING
 identifier: MISSING
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

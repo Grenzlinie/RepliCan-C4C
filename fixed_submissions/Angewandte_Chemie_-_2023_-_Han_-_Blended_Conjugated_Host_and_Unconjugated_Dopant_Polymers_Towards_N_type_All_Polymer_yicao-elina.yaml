@@ -3,7 +3,7 @@ paper_title: Conducting Polymers Blended Conjugated Host and Unconjugated Dopant
   Towards N-type All-Polymer Conductors and High-ZT Thermoelectrics
 paper_pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/anie.202219313
 identifier: 10.1002/anie.202219313
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

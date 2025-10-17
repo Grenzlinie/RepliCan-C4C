@@ -3,7 +3,7 @@ paper_title: 'Anomalous Hall Crystals in Rhombohedral Multilayer Graphene I: Int
   Chern Bands and Fractional Quantum Hall States at Zero Magnetic Field'
 paper_pdf: https://arxiv.org/pdf/2311.05568.pdf
 identifier: '2311.05568'
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

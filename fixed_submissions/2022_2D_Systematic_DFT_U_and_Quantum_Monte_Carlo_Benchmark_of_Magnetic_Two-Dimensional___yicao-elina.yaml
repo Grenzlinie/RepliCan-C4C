@@ -3,7 +3,7 @@ paper_title: Systematic DFT+U and Quantum Monte Carlo Benchmark of Magnetic Two-
   (2D) CrX3 (X = I, Br, Cl, F)
 paper_pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9888057/pdf/nihms-1864450.pdf
 identifier: 10.1021/acs.jpcc.2c06733
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: https://jarvis.nist.gov/
 claims:

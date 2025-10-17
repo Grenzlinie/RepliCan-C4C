@@ -2,7 +2,7 @@ username: yicao-elina
 paper_title: Chemomechanical modification of quantum emission in monolayer WSe2
 paper_pdf: https://www.nature.com/articles/s41467-023-38021-5.pdf
 identifier: s41467-023-38021-5
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

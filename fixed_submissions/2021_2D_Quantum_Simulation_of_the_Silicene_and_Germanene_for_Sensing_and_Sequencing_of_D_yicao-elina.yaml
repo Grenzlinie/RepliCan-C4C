@@ -3,7 +3,7 @@ paper_title: Quantum Simulation of the Silicene and Germanene for Sensing and Se
   of DNA/RNA Nucleobases
 paper_pdf: MISSING
 identifier: MISSING
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

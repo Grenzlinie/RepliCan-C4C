@@ -3,7 +3,7 @@ paper_title: 'Electronic structure of Ruddlesden-Popper nickelates: Strain to mi
   the effects pressure'
 paper_pdf: https://arxiv.org/pdf/2412.04391v4.pdf
 identifier: 2412.04391v4
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

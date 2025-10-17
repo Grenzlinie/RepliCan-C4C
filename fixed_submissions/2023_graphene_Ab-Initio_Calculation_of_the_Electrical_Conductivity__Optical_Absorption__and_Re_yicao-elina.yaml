@@ -3,7 +3,7 @@ paper_title: Ab-Initio Calculation of the Electrical Conductivity, Optical Absor
   and Reﬂectivity of the 2D Materials SnC and NbC
 paper_pdf: https://www.mdpi.com/2073-4360/13/4/682/pdf
 identifier: 10.3390/cryst13040682
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

@@ -3,7 +3,7 @@ paper_title: Rational design of optimal bimetallic and trimetallic nickel-based 
   alloys for bio-oil upgrading to hydrogen
 paper_pdf: https://doi.org/10.1038/s41467-025-57949-6
 identifier: https://doi.org/10.1038/s41467-025-57949-6
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: NOT_SPECIFIED
 data_url: NOT_SPECIFIED
 claims:

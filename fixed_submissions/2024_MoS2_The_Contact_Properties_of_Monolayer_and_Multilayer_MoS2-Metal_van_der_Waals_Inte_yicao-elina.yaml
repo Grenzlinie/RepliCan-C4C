@@ -3,7 +3,7 @@ paper_title: The Contact Properties of Monolayer and Multilayer MoS2-Metal van d
   Waals Interfaces
 paper_pdf: https://www.mdpi.com/2075-4701/14/13/1075/pdf
 identifier: 10.3390/nano14131075
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

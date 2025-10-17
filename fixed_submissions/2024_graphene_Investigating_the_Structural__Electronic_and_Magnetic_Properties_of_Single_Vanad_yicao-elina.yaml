@@ -3,7 +3,7 @@ paper_title: Investigating the Structural, Electronic and Magnetic Properties of
   Vanadium Atom Doped Germanene Monolayer using Density Functional Theory (DFT)
 paper_pdf: https://doi.org/10.19184/cerimre.v7i1.38572
 identifier: 10.19184/cerimre.v7i1.38572
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

@@ -3,7 +3,7 @@ paper_title: High-Throughput DFT-Based Discovery of Next Generation Two-Dimensio
   (2D) Superconductors
 paper_pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9988690/
 identifier: PMC9988690
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: https://jarvis.nist.gov/
 data_url: https://jarvis.nist.gov/
 claims:

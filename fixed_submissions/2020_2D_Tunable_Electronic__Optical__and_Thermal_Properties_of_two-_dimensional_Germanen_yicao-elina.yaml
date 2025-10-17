@@ -3,7 +3,7 @@ paper_title: Tunable Electronic, Optical, and Thermal Properties of two-dimensio
   Germanene via an external electric field
 paper_pdf: https://www.nature.com/articles/s41598-020-58120-2
 identifier: s41598-020-58120-2
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

@@ -2,7 +2,7 @@ username: yicao-elina
 paper_title: Spin-valley locking for in-gap quantum dots in a MoS2 transistor
 paper_pdf: https://arxiv.org/pdf/2306.13542v1.pdf
 identifier: '2306.13542'
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

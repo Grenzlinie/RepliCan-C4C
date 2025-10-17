@@ -2,7 +2,7 @@ username: yicao-elina
 paper_title: Unusually high thermal conductivity in suspended monolayer MoSi2N4
 paper_pdf: https://www.nature.com/articles/s41467-024-41278-4
 identifier: s41467-024-41278-4
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

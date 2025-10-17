@@ -3,7 +3,7 @@ paper_title: Van der Waals enabled formation and integration of ultrathin high-Î
   on 2D semiconductors
 paper_pdf: https://www.nature.com/articles/s41699-023-00430-4
 identifier: s41699-023-00430-4
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:

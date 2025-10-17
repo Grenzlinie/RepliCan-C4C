@@ -3,7 +3,7 @@ paper_title: 'Electro-Optical Properties of Monolayer and Bilayer Pentagonal BN:
   Principles Study'
 paper_pdf: MISSING
 identifier: MISSING
-claim_type: custom_code
+claim_type: "pip_libraries"
 code_url: ''
 data_url: ''
 claims:
