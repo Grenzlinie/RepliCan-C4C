@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: Quantum Simulation of the Silicene and Germanene for Sensing and Sequencing
   of DNA/RNA Nucleobases
-paper_pdf: MISSING
-identifier: MISSING
+paper_pdf: 'https://www.mdpi.com/2079-6374/11/3/59/pdf?version=1614665235'
+identifier: 'https://doi.org/10.3390/bios11030059'
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

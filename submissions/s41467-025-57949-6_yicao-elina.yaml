@@ -5,7 +5,7 @@ paper_pdf: https://doi.org/10.1038/s41467-025-57949-6
 identifier: https://doi.org/10.1038/s41467-025-57949-6
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
-data_url: NOT_SPECIFIED
+data_url: ''
 claims:
 - claim: Pd-Ni catalyst provokes the utmost H2 activity
   instruction:

@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: Tunable Electronic, Optical, and Thermal Properties of two-dimensional
   Germanene via an external electric field
-paper_pdf: https://www.nature.com/articles/s41598-020-58120-2
-identifier: s41598-020-58120-2
+paper_pdf: 'https://www.nature.com/articles/s41598-020-57558-x.pdf'
+identifier: 'https://doi.org/10.1038/s41598-020-57558-x'
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

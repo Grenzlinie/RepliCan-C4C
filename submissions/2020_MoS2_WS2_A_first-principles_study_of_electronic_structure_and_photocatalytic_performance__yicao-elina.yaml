@@ -2,7 +2,7 @@ username: yicao-elina
 paper_title: A first-principles study of electronic structure and photocatalytic performance
   of GaN–MX2 (M = Mo, W; X= S, Se) van der Waals heterostructures
 paper_pdf: https://pubs.rsc.org/en/content/articlepdf/2020/ra/d0ra03884a
-identifier: d0ra03884a
+identifier: 10.1039/d0ra03884a
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

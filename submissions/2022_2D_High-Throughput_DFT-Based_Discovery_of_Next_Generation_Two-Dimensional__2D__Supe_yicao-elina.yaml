@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: High-Throughput DFT-Based Discovery of Next Generation Two-Dimensional
   (2D) Superconductors
-paper_pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9988690/
-identifier: PMC9988690
+paper_pdf: https://pmc.ncbi.nlm.nih.gov/articles/PMC9988690/pdf/nihms-1874097.pdf
+identifier: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9988690/
 claim_type: "pip_libraries"
 code_url: https://jarvis.nist.gov/
 data_url: https://jarvis.nist.gov/

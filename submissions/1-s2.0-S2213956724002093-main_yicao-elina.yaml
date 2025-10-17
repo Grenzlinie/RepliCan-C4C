@@ -5,7 +5,7 @@ paper_pdf: https://pdf.sciencedirectassets.com/286734/1-s2.0-S2213956724X00079/1
 identifier: https://doi.org/10.1016/j.jma.2024.06.008
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
-data_url: NOT_SPECIFIED
+data_url: ''
 claims:
 - claim: The initial minute of heat treatment produces minimal impact on hardness;
     however, there was a sharp decrease (by 30%) after 2-minutes.

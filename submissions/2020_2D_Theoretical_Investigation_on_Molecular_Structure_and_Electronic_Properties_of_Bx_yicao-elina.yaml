@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: Theoretical Investigation on Molecular Structure and Electronic Properties
   of BxLiy Cluster for Lithium-Ion Batteries with Quantum ESPRESSO Program
-paper_pdf: molecules-25-03266.pdf
-identifier: molecules-25-03266
+paper_pdf: https://www.mdpi.com/1420-3049/25/14/3266/pdf?version=1595219328
+identifier: https://doi.org/10.3390/molecules25143266
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

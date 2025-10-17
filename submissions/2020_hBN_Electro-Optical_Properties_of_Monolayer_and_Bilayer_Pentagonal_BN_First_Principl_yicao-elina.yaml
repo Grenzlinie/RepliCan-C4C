@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: 'Electro-Optical Properties of Monolayer and Bilayer Pentagonal BN: First
   Principles Study'
-paper_pdf: MISSING
-identifier: MISSING
+paper_pdf: https://pmc.ncbi.nlm.nih.gov/articles/PMC7153586/pdf/nanomaterials-10-00440.pdf
+identifier: https://doi.org/10.3390/nano10030440
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''

@@ -5,7 +5,7 @@ paper_pdf: https://pubs.rsc.org/en/content/articlepdf/2023/sm/d3sm01140b
 identifier: https://doi.org/10.1039/D3SM01140B
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
-data_url: NOT_SPECIFIED
+data_url: ''
 claims:
 - claim: The energy barrier between F2F and brick-wall configurations for short C-6
     ligands in vacuum is extremely high (1356 kcal mol⁻¹). The barrier drops non-linearly

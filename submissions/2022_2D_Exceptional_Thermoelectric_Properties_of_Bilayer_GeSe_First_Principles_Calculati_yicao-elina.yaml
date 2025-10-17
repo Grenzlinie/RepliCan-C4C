@@ -1,8 +1,8 @@
 username: yicao-elina
 paper_title: 'Exceptional Thermoelectric Properties of Bilayer GeSe: First Principles
   Calculation'
-paper_pdf: https://www.mdpi.com/2076-3417/15/3/971/pdf
-identifier: 10.3390/ma15030971
+paper_pdf: https://www.mdpi.com/1996-1944/15/3/971/pdf?version=1643265772
+identifier: https://doi.org/10.3390/ma15030971
 claim_type: "pip_libraries"
 code_url: http://www.quantum-espresso.org/download
 data_url: ''
